@@ -117,11 +117,15 @@ const t = {
   tos7: { en: 'no attack on cambodian infrastructure', km: 'ហាមវាយហេដ្ឋារចនាសម្ព័ន្ធកម្ពុជា' },
   tos7d: { en: 'this includes cambodian ISPs, cambodian hosting providers, cambodian government services, and any cambodian owned online service. we are a cambodian service and we respect our country.', km: 'នេះរួមបញ្ចូល ISP កម្ពុជា អ្នកផ្តល់សេវាបង្ហោះនៅកម្ពុជា សេវារដ្ឋាភិបាលកម្ពុជា និងសេវាកម្មអនឡាញណាដែលជាកម្មសិទ្ធិរបស់ខ្មែរ។ យើងជាសេវាកម្មខ្មែរ ហើយយើងគោរពប្រទេសរបស់យើង។' },
   contact_title: { en: 'contact', km: 'ទំនាក់ទំនង' },
-  contact_sub: { en: 'hit us up on telegram.', km: 'ទាក់ទងមកយើងតាម Telegram។' },
-  channel: { en: 'channel: @rikixzapi', km: 'ឆានែល៖ @rikixzapi' },
-  backup: { en: 'backup: @krisneverdie', km: 'បម្រុង៖ @krisneverdie' },
-  support1: { en: 'support: @rosykisa', km: 'សាវ៉ា៖ @rosykisa' },
-  support2: { en: 'support: @rikixz_supporter', km: 'សាវ៉ា៖ @rikixz_supporter' },
+  contact_sub: { en: 'reach us on telegram.', km: 'ទាក់ទងមកយើងតាម Telegram។' },
+  channel_label: { en: 'channel', km: 'ឆានែល' },
+  owner_label: { en: 'owner', km: 'ម្ចាស់' },
+  support_label: { en: 'support', km: 'ជំនួយ' },
+  channel_desc: { en: 'announcements, updates, and community.', km: 'សេចក្តីប្រកាស ព័ត៌មានថ្មីៗ និងសហគមន៍។' },
+  owner_desc: { en: 'direct contact with the owner for business.', km: 'ទាក់ទងផ្ទាល់ជាមួយម្ចាស់សម្រាប់ការងារ។' },
+  support_desc: { en: 'order help, questions, and technical support.', km: 'ជំនួយបញ្ជាទិញ សំណួរ និងជំនួយបច្ចេកទេស។' },
+  join_btn: { en: 'join', km: 'ចូល' },
+  message_btn: { en: 'message', km: 'ទាក់ទង' },
   footer: { en: 'rikixz stresser &mdash; first cambodia ip stresser &copy; 2026', km: 'rikixz stresser &mdash; ស្ត្រេសសឺរខ្មែរដំបូង &copy; 2026' },
   footer_sub: { en: 'for authorized testing only. read the', km: 'សម្រាប់សាកល្បងតែប៉ុណ្ណោះ។ អាន' },
   tos_link: { en: 'tos', km: 'លក្ខខណ្ឌ' },
@@ -182,32 +186,44 @@ const t = {
       </div>
       <div class="feats">
         <div class="feat">
-          <div class="feat-num">01</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
           <strong>{{ t.feat1_title[lang] }}</strong>
           <span>{{ t.feat1_desc[lang] }}</span>
         </div>
         <div class="feat">
-          <div class="feat-num">02</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
           <strong>{{ t.feat2_title[lang] }}</strong>
           <span>{{ t.feat2_desc[lang] }}</span>
         </div>
         <div class="feat">
-          <div class="feat-num">03</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
           <strong>{{ t.feat3_title[lang] }}</strong>
           <span>{{ t.feat3_desc[lang] }}</span>
         </div>
         <div class="feat">
-          <div class="feat-num">04</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
           <strong>{{ t.feat4_title[lang] }}</strong>
           <span>{{ t.feat4_desc[lang] }}</span>
         </div>
         <div class="feat">
-          <div class="feat-num">05</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1010 10 4 4 0 01-5-5 4 4 0 01-5-5A10 10 0 0012 2z"/></svg>
+          </div>
           <strong>{{ t.feat5_title[lang] }}</strong>
           <span>{{ t.feat5_desc[lang] }}</span>
         </div>
         <div class="feat">
-          <div class="feat-num">06</div>
+          <div class="feat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
           <strong>{{ t.feat6_title[lang] }}</strong>
           <span>{{ t.feat6_desc[lang] }}</span>
         </div>
@@ -460,11 +476,37 @@ const t = {
         <h2>{{ t.contact_title[lang] }}</h2>
         <p>{{ t.contact_sub[lang] }}</p>
       </div>
-      <div class="contact-links">
-        <a href="https://t.me/rikixzapi" target="_blank" class="clink">{{ t.channel[lang] }}</a>
-        <a href="https://t.me/krisneverdie" target="_blank" class="clink">{{ t.backup[lang] }}</a>
-        <a href="https://t.me/rosykisa" target="_blank" class="clink">{{ t.support1[lang] }}</a>
-        <a href="https://t.me/rikixz_supporter" target="_blank" class="clink">{{ t.support2[lang] }}</a>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-tag tag-channel">{{ t.channel_label[lang] }}</div>
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+          </div>
+          <strong class="contact-name">@rikixzapi</strong>
+          <span class="contact-desc">{{ t.channel_desc[lang] }}</span>
+          <a href="https://t.me/rikixzapi" target="_blank" class="contact-btn">{{ t.join_btn[lang] }}</a>
+        </div>
+        <div class="contact-card card-owner">
+          <div class="contact-tag tag-owner">{{ t.owner_label[lang] }}</div>
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15C15.866 15 19 12.3137 19 9C19 5.68629 15.866 3 12 3C8.13401 3 5 5.68629 5 9C5 12.3137 8.13401 15 12 15Z"/><path d="M3 21C3 17.6863 6.68629 15 12 15C17.3137 15 21 17.6863 21 21"/></svg>
+          </div>
+          <strong class="contact-name">@krisneverdie</strong>
+          <span class="contact-desc">{{ t.owner_desc[lang] }}</span>
+          <a href="https://t.me/krisneverdie" target="_blank" class="contact-btn">{{ t.message_btn[lang] }}</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-tag tag-support">{{ t.support_label[lang] }}</div>
+          <div class="contact-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"/></svg>
+          </div>
+          <div class="contact-sublist">
+            <a href="https://t.me/rosykisa" target="_blank" class="contact-sub">@rosykisa</a>
+            <a href="https://t.me/rikixz_supporter" target="_blank" class="contact-sub">@rikixz_supporter</a>
+          </div>
+          <span class="contact-desc">{{ t.support_desc[lang] }}</span>
+          <a href="https://t.me/rosykisa" target="_blank" class="contact-btn">{{ t.message_btn[lang] }}</a>
+        </div>
       </div>
     </section>
 
@@ -688,11 +730,20 @@ a { color:inherit; text-decoration:none }
 /* features */
 .feats { display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px }
 .feat {
-  padding:24px;background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:26px;background:var(--card);border:1px solid var(--border);border-radius:14px;
   transition:all .3s ease;animation:fade-up .5s ease-out both;position:relative;
-  box-shadow:0 1px 3px rgba(0,0,0,.03)
+  box-shadow:0 1px 3px rgba(0,0,0,.03);display:flex;flex-direction:column
 }
-.feat-num { display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:rgba(255,38,102,.1);color:var(--accent);font-size:15px;font-weight:800;margin-bottom:14px;font-family:var(--mono) }
+.feat-icon {
+  width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  color:var(--accent);background:rgba(255,38,102,.08);margin-bottom:16px;transition:all .3s;
+  flex-shrink:0
+}
+.feat:nth-child(2) .feat-icon { color:#8833ff;background:rgba(136,51,255,.08) }
+.feat:nth-child(3) .feat-icon { color:var(--green);background:rgba(0,187,102,.08) }
+.feat:nth-child(4) .feat-icon { color:#ff8800;background:rgba(255,136,0,.08) }
+.feat:nth-child(5) .feat-icon { color:#00bbff;background:rgba(0,187,255,.08) }
+.feat:nth-child(6) .feat-icon { color:#ff44aa;background:rgba(255,68,170,.08) }
 .feat:nth-child(1) { animation-delay:0s }
 .feat:nth-child(2) { animation-delay:.06s }
 .feat:nth-child(3) { animation-delay:.12s }
@@ -700,6 +751,7 @@ a { color:inherit; text-decoration:none }
 .feat:nth-child(5) { animation-delay:.24s }
 .feat:nth-child(6) { animation-delay:.3s }
 .feat:hover { border-color:var(--accent);transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,38,102,.12) }
+.feat:hover .feat-icon { transform:scale(1.1);background:var(--accent);color:#fff }
 .feat strong { display:block;font-size:15px;font-weight:700;color:var(--head);margin-bottom:6px }
 .feat span { font-size:13px;color:var(--text2);line-height:1.6;display:block }
 
@@ -833,13 +885,46 @@ a { color:inherit; text-decoration:none }
 
 /* contact */
 .contact-sec { text-align:center }
-.contact-links { display:flex;gap:12px;justify-content:center;flex-wrap:wrap }
-.clink {
-  display:inline-flex;align-items:center;gap:8px;padding:14px 28px;
-  background:var(--card);border:1px solid var(--border);border-radius:12px;
-  font-size:14px;font-weight:500;transition:all .3s cubic-bezier(.22,1,.36,1)
+.contact-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;max-width:780px;margin:0 auto }
+.contact-card {
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:28px 22px;text-align:center;transition:all .3s;position:relative;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+  animation:fade-up .5s ease-out both;box-shadow:0 1px 3px rgba(0,0,0,.03)
 }
-.clink:hover { background:var(--card-h);border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,38,102,.12) }
+.contact-card:nth-child(1) { animation-delay:0s }
+.contact-card:nth-child(2) { animation-delay:.1s }
+.contact-card:nth-child(3) { animation-delay:.2s }
+.contact-card:hover { transform:translateY(-4px);box-shadow:0 12px 36px rgba(255,38,102,.1);border-color:var(--accent) }
+.contact-tag {
+  position:absolute;top:0;left:0;right:0;padding:5px;
+  font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:#fff;border-radius:13px 13px 0 0
+}
+.tag-channel { background:var(--accent) }
+.tag-owner { background:#8833ff }
+.tag-support { background:var(--green) }
+.contact-icon {
+  width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  color:var(--accent);background:rgba(255,38,102,.08);margin-top:8px
+}
+.card-owner .contact-icon { color:#8833ff;background:rgba(136,51,255,.08) }
+.contact-card:last-child .contact-icon { color:var(--green);background:rgba(0,187,102,.08) }
+.contact-name { font-size:15px;font-weight:700;color:var(--head);font-family:var(--mono) }
+.contact-desc { font-size:12px;color:var(--text2);line-height:1.4 }
+.contact-sublist { display:flex;flex-direction:column;gap:4px;width:100% }
+.contact-sub {
+  display:block;padding:8px 14px;border-radius:8px;background:var(--bg);
+  font-size:13px;font-weight:600;color:var(--head);font-family:var(--mono);
+  transition:all .2s;text-decoration:none
+}
+.contact-sub:hover { background:rgba(255,38,102,.08);color:var(--accent) }
+.contact-btn {
+  display:inline-block;padding:8px 24px;border-radius:8px;font-weight:600;font-size:12px;
+  text-transform:uppercase;letter-spacing:.5px;text-decoration:none;transition:all .25s;
+  background:transparent;color:var(--accent);border:1px solid var(--accent);margin-top:4px
+}
+.contact-btn:hover { background:var(--accent);color:#fff;box-shadow:0 4px 16px rgba(255,38,102,.2) }
 
 /* footer */
 .ftr { border-top:1px solid var(--border);padding:28px 24px;text-align:center }
@@ -919,8 +1004,13 @@ a { color:inherit; text-decoration:none }
   .tos-body strong { font-size:13px }
   .tos-body span { font-size:12px }
 
-  .contact-links { flex-direction:column;align-items:stretch;gap:8px;max-width:320px;margin:0 auto }
-  .clink { padding:10px 20px;font-size:13px;justify-content:center }
+  .contact-grid { grid-template-columns:1fr;max-width:340px;gap:14px }
+  .contact-card { padding:22px 18px;gap:8px }
+  .contact-icon { width:46px;height:46px }
+  .contact-name { font-size:14px }
+  .contact-desc { font-size:11px }
+  .contact-sub { font-size:12px;padding:6px 12px }
+  .contact-btn { font-size:11px;padding:7px 20px }
 
   .ftr { padding:20px 16px }
   .ftr p { font-size:12px }

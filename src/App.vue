@@ -417,17 +417,17 @@ const t = {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
-  --bg: #08080e;
-  --bg2: #0f0f18;
-  --card: #151520;
-  --card-h: #1c1c2a;
-  --text: #c8c8d0;
-  --text2: #707090;
-  --head: #e8e8f0;
+  --bg: #f4f4f9;
+  --bg2: #eaeaef;
+  --card: #ffffff;
+  --card-h: #f0f0f5;
+  --text: #444466;
+  --text2: #8888aa;
+  --head: #1a1a2e;
   --accent: #ff2666;
   --accent2: #cc1144;
-  --green: #00ee88;
-  --border: #1e1e30;
+  --green: #00bb66;
+  --border: #e0e0e8;
   --font: 'Inter', system-ui, sans-serif;
   --mono: 'JetBrains Mono', monospace;
   --gradient: linear-gradient(135deg, #ff2666, #8833ff, #ff2666);
@@ -489,8 +489,8 @@ body {
 body::before {
   content:'';position:fixed;inset:0;z-index:-1;
   background-image:
-    linear-gradient(rgba(255,38,102,.02) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,38,102,.02) 1px,transparent 1px);
+    linear-gradient(rgba(255,38,102,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,38,102,.04) 1px,transparent 1px);
   background-size:40px 40px;
   pointer-events:none
 }
@@ -499,7 +499,7 @@ a { color:inherit; text-decoration:none }
 /* topbar */
 .topbar {
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(8,8,14,.9);backdrop-filter:blur(16px);
+  background:rgba(255,255,255,.92);backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);padding:0 20px
 }
 .topbar-in {
@@ -534,17 +534,17 @@ a { color:inherit; text-decoration:none }
 .hero-overlay::before {
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(255,38,102,.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(136,51,255,.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(0,238,136,.04) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, rgba(255,38,102,.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(136,51,255,.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(0,187,102,.06) 0%, transparent 50%);
   background-size:200% 200%;
   animation:gradient-shift 8s ease infinite
 }
 .hero-overlay::after {
   content:'';position:absolute;inset:0;
   background-image:
-    linear-gradient(rgba(255,38,102,.04) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,38,102,.04) 1px,transparent 1px);
+    linear-gradient(rgba(255,38,102,.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,38,102,.06) 1px,transparent 1px);
   background-size:50px 50px;
   pointer-events:none;
   opacity:.5
@@ -588,11 +588,11 @@ a { color:inherit; text-decoration:none }
 .btn-primary:hover { transform:translateY(-3px);box-shadow:0 8px 40px rgba(255,38,102,.4) }
 .btn-primary:hover::after { transform:translateX(100%) }
 .btn-ghost {
-  display:inline-flex;padding:14px 32px;background:rgba(21,21,32,.6);color:var(--text);
+  display:inline-flex;padding:14px 32px;background:rgba(255,255,255,.7);color:var(--text);
   border-radius:10px;font-weight:600;font-size:14px;border:1px solid var(--border);transition:all .3s;
   backdrop-filter:blur(4px)
 }
-.btn-ghost:hover { border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,38,102,.15);background:rgba(21,21,32,.9) }
+.btn-ghost:hover { border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,38,102,.15);background:#fff }
 .btn-sm { padding:10px 20px;font-size:13px }
 .hero-stats { display:flex;gap:36px;justify-content:center;margin-top:48px;flex-wrap:wrap;animation:fade-up .6s ease-out .6s both }
 .stat { text-align:center;transition:all .3s }

@@ -76,30 +76,46 @@ const t = {
   faq3_q: { en: 'what are the rules?', km: 'តើមានច្បាប់អីខ្លះ?' },
   faq3_a: { en: 'break the tos and youre banned. no refunds. simple.', km: 'បំពាន TOS ត្រូវបានបណ្ដេញចេញ។ មិនសងលុយវិញទេ។ សាមញ្ញ។' },
   faq4_q: { en: 'how do i order?', km: 'តើបញ្ជាទិញដូចម្ដេច?' },
-  faq4_a: { en: 'telegram: @krisneverdie or join @rikixzapi. tell us what you need.', km: 'តេឡេក្រាម៖ @krisneverdie ឬចូល @rikixzapi។ ប្រាប់យើងពីអ្វីដែលអ្នកចង់បាន។' },
+  faq4_a: { en: 'telegram: @krisneverdie or join @rikixzapi. tell us what you need and we will set you up.', km: 'តេឡេក្រាម៖ @krisneverdie ឬចូល @rikixzapi។ ប្រាប់យើងពីអ្វីដែលអ្នកចង់បាន យើងនឹងរៀបចំឲ្យអ្នក។' },
   faq5_q: { en: 'what payment?', km: 'បង់លុយតាមវិធីណា?' },
   faq5_a: { en: 'btc, usdt, crypto. ask on telegram for details.', km: 'BTC, USDT, crypto ផ្សេងៗ។ សួរតាម Telegram សម្រាប់ព័ត៌មានលម្អិត។' },
   faq6_q: { en: 'how fast does it start?', km: 'តើចាប់ផ្ដើមលឿនប៉ុណ្ណា?' },
-  faq6_a: { en: 'right after payment. no waiting around.', km: 'ភ្លាមៗបន្ទាប់ពីបង់លុយ។ មិនបាច់ចាំទេ។' },
+  faq6_a: { en: 'right after payment. no waiting around. we activate immediately.', km: 'ភ្លាមៗបន្ទាប់ពីបង់លុយ។ មិនបាច់ចាំទេ។ យើងធ្វើឲ្យភ្លាមៗ។' },
+  faq7_q: { en: 'what is method flood?', km: 'តើ METHOD-FLOOD ជាអី?' },
+  faq7_a: { en: 'sends massive http/https request floods with randomized headers, user agents, and ip spoofing. designed to overwhelm web servers by consuming connection slots and bandwidth. works on most layer 7 targets.', km: 'បញ្ជូន http/https ច្រើនសន្ធឹកជាមួយ headers, user agents និង ip spoofing ចៃដន្យ។ បង្កើតឡើងដើម្បីធ្វើឲ្យ web server ផ្ទុកមិនបានដោយការប្រើប្រាស់ connection និង bandwidth ទាំងអស់។ វាយបាន target layer 7 ភាគច្រើន។' },
+  faq8_q: { en: 'what is hegt?', km: 'តើ HEGT ជាអី?' },
+  faq8_a: { en: 'high efficiency get attack. uses optimized request patterns with minimal bandwidth overhead to maximize impact on the target cpu and memory. more stealthy than raw flood, better against cached or cdn protected targets.', km: 'ការវាយប្រភេទ GET ដែលមានប្រសិទ្ធភាពខ្ពស់។ ប្រើរបៀប request ដែលបង្កើនប្រសិទ្ធភាពដោយប្រើ bandwidth តិចតួចដើម្បីវាយ CPU និង memory របស់គោលដៅ។ លាក់ខ្លួនជាង raw flood ហើយវាយបានល្អជាងលើ target ដែលមាន cache ឬ CDN ។' },
+  faq9_q: { en: 'do you offer a free trial?', km: 'តើមានសាកល្បងឥតគិតថ្លៃទេ?' },
+  faq9_a: { en: 'no free trials. we sell time based access starting at $5. join our telegram channel for announcements and updates.', km: 'គ្មានការសាកល្បងឥតគិតថ្លៃទេ។ យើងលក់តាមពេលវេលា ចាប់ផ្ដើមត្រឹមតែ $5។ ចូលឆានែល Telegram របស់យើងដើម្បីទទួលព័ត៌មាន។' },
+  faq10_q: { en: 'what infrastructure do you use?', km: 'តើប្រើ infrastructure អ្វីខ្លះ?' },
+  faq10_a: { en: 'we use a distributed network of booter panels across multiple locations. cambodia based infrastructure with global relay nodes for maximum reach and minimal latency.', km: 'យើងប្រើបណ្ដាញ booter panels ដែលចែកចាយនៅទីតាំងជាច្រើន។ ហេដ្ឋារចនាសម្ព័ន្ធមូលដ្ឋាននៅកម្ពុជា ជាមួយ relay nodes សកលសម្រាប់ការទៅដល់ឆ្ងាយបំផុត និង latency តិចបំផុត។' },
   why_title_sec: { en: 'why use rikixz?', km: 'ហេតុអីត្រូវប្រើ rikixz?' },
   why_sub_sec: { en: 'use it on your own risk. legit tool, not for illegal shit.', km: 'ប្រើដោយគ្រោះថ្នាក់ផ្ទាល់ខ្លួន។ ឧបករណ៍ស្របច្បាប់ មិនមែនសម្រាប់រឿងខុសច្បាប់ទេ។' },
   why1_title: { en: 'for testing only', km: 'សម្រាប់សាកល្បងតែប៉ុណ្ណោះ' },
-  why1_desc: { en: 'this stresser is made for running tests on your own website or servers. check your dstat, see how your setup handles the load.', km: 'stresser នេះបង្កើតឡើងសម្រាប់សាកល្បង website ឬ server ផ្ទាល់ខ្លួនឯង។ ពិនិត្យ dstat របស់អ្នក មើលថា setup អ្នកទប់បានប៉ុណ្ណា។' },
+  why1_desc: { en: 'rikixz stresser is designed exclusively for authorized stress testing of your own websites, servers, and network infrastructure. use it to simulate real world traffic, measure how your setup handles high load conditions, and find weak points before attackers do. we provide the tool, you point it at your own targets.', km: 'rikixz stresser បង្កើតឡើងសម្រាប់តែការសាកល្បងសម្ពាធលើគេហទំព័រ ម៉ាស៊ីនបម្រើ និងបណ្ដាញហេដ្ឋារចនាសម្ព័ន្ធរបស់អ្នកផ្ទាល់ដែលបានអនុញ្ញាតប៉ុណ្ណោះ។ ប្រើវាដើម្បីក្លែងធ្វើ traffic ពិតប្រាកដ វាស់ស្ទង់ពីរបៀបដែលប្រព័ន្ធរបស់អ្នកដោះស្រាយសម្ពាធខ្ពស់ និងស្វែងរកចំណុចខ្សោយមុនពេលអ្នកវាយប្រហាររកឃើញ។ យើងផ្តល់ឧបករណ៍ អ្នកចង្អុលទៅគោលដៅផ្ទាល់ខ្លួនអ្នក។' },
   why2_title: { en: 'use at your own risk', km: 'ប្រើដោយគ្រោះថ្នាក់' },
-  why2_desc: { en: 'you are responsible for what you do with this tool. we provide the service, you provide the brain.', km: 'អ្នកទទួលខុសត្រូវចំពោះអ្វីដែលអ្នកធ្វើជាមួយឧបករណ៍នេះ។ យើងផ្ដល់សេវា អ្នកផ្ដល់ខួរក្បាល។' },
+  why2_desc: { en: 'you are fully responsible for how you use this service. we provide the technology, but what you do with it is on you. if you misuse rikixz stresser to attack targets you do not own or lack written permission for, you accept all legal consequences. we do not take responsibility for your actions. use common sense, follow the law, and keep your testing legit.', km: 'អ្នកទទួលខុសត្រូវទាំងស្រុងចំពោះរបៀបដែលអ្នកប្រើសេវាកម្មនេះ។ យើងផ្តល់បច្ចេកវិទ្យា ប៉ុន្តែអ្វីដែលអ្នកធ្វើជាមួយវាគឺជាការទទួលខុសត្រូវរបស់អ្នក។ ប្រសិនបើអ្នកប្រើ rikixz stresser ដើម្បីវាយប្រហារគោលដៅដែលអ្នកមិនមែនជាម្ចាស់ ឬគ្មានការអនុញ្ញាតជាលាយលក្ខណ៍អក្សរ អ្នកទទួលយកផលវិបាកផ្លូវច្បាប់ទាំងអស់។ យើងមិនទទួលខុសត្រូវចំពោះសកម្មភាពរបស់អ្នកទេ។ ប្រើស្មារតីឲ្យបានត្រឹមត្រូវ គោរពច្បាប់ និងរក្សាការសាកល្បងរបស់អ្នកឲ្យស្របច្បាប់។' },
   why3_title: { en: 'no illegal use', km: 'ហាមប្រើខុសច្បាប់' },
-  why3_desc: { en: 'do not use this for illegal activities. if our support team sees you using it for illegal shit, you get banned immediately. no warnings. no refunds.', km: 'កុំប្រើរឿងនេះសម្រាប់សកម្មភាពខុសច្បាប់។ បើក្រុមការងារយើងឃើញអ្នកប្រើខុសច្បាប់ អ្នកនឹងត្រូវបានបណ្ដេញចេញភ្លាមៗ។ គ្មានការព្រមានទេ។ មិនសងលុយវិញ។' },
+  why3_desc: { en: 'do not use rikixz stresser for illegal activities. we monitor usage patterns and our support team actively watches for abuse. if we detect or suspect illegal use including attacks on unauthorized targets, we will ban your account immediately with no warnings and no refunds. we cooperate with law enforcement when required. this tool is for authorized security testing only, not for crime.', km: 'កុំប្រើ rikixz stresser សម្រាប់សកម្មភាពខុសច្បាប់។ យើងតាមដានលំនាំនៃការប្រើប្រាស់ ហើយក្រុមការងារជំនួយរបស់យើងតាមដានការប្រើប្រាស់ខុសយ៉ាងសកម្ម។ ប្រសិនបើយើងរកឃើញ ឬសង្ស័យថាមានការប្រើប្រាស់ខុសច្បាប់ រួមទាំងការវាយប្រហារលើគោលដៅដែលគ្មានការអនុញ្ញាត យើងនឹងបិទគណនីរបស់អ្នកភ្លាមៗ ដោយគ្មានការព្រមាន និងគ្មានការសងប្រាក់វិញ។ យើងសហការជាមួយអាជ្ញាធរនៅពេលចាំបាច់។ ឧបករណ៍នេះគឺសម្រាប់តែការធ្វើតេស្តសុវត្ថិភាពដែលមានការអនុញ្ញាតប៉ុណ្ណោះ មិនមែនសម្រាប់ឧក្រិដ្ឋកម្មទេ។' },
   why4_title: { en: 'stresser for run, not crime', km: 'stresser សម្រាប់សាកល្បង' },
-  why4_desc: { en: 'this is a stress testing tool. use it to stress test your own infrastructure. keep it legit.', km: 'នេះជាឧបករណ៍ stress testing។ ប្រើវាដើម្បីសាកល្បង infrastructure ផ្ទាល់ខ្លួនឯង។ រក្សាវាឲ្យស្របច្បាប់។' },
+  why4_desc: { en: 'this is a legitimate stress testing tool, not a botnet or criminal ddos service. the purpose is to help system administrators, network engineers, and security researchers test their own infrastructure resilience. use it to validate your firewall rules, test your load balancers, tune your rate limiting, and verify your ddos mitigation setup. keep it professional, keep it legal, and only test what you own.', km: 'នេះជាឧបករណ៍ធ្វើតេស្តសម្ពាធស្របច្បាប់ មិនមែន botnet ឬសេវាកម្ម ddos ឧក្រិដ្ឋកម្មទេ។ គោលបំណងគឺដើម្បីជួយអ្នកគ្រប់គ្រងប្រព័ន្ធ វិស្វករបណ្ដាញ និងអ្នកស្រាវជ្រាវសុវត្ថិភាពធ្វើតេស្តភាពធន់នៃហេដ្ឋារចនាសម្ព័ន្ធផ្ទាល់ខ្លួនរបស់ពួកគេ។ ប្រើវាដើម្បីធ្វើឲ្យប្រាកដថា firewall របស់អ្នកដំណើរការ សាកល្បង load balancers របស់អ្នក កែតម្រូវ rate limiting និងផ្ទៀងផ្ទាត់ ddos mitigation របស់អ្នក។ រក្សាវាឲ្យមានជំនាញវិជ្ជាជីវៈ រក្សាវាឲ្យស្របច្បាប់ និងសាកល្បងតែអ្វីដែលអ្នកជាម្ចាស់ប៉ុណ្ណោះ។' },
   tos_title: { en: 'terms of service', km: 'លក្ខខណ្ឌ' },
   tos_sub: { en: 'read this. seriously.', km: 'អានហ្នឹងសិន។ ចាំបាច់ណាស់។' },
-  tos_warn: { en: 'violating any rule = permanent ban. no exceptions. no refunds.', km: 'បំពានច្បាប់ណាមួយ = បណ្ដេញចេញជាអចិន្ត្រៃយ៍។ គ្មានករណីលើកលែង។ មិនសងលុយវិញ។' },
+  tos_warn: { en: 'violating any rule below will result in a permanent ban with no exceptions and no refunds.', km: 'ការបំពានច្បាប់ណាមួយខាងក្រោមនឹងត្រូវបណ្ដេញចេញជាអចិន្ត្រៃយ៍ ដោយគ្មានករណីលើកលែង និងគ្មានការសងប្រាក់វិញ។' },
   tos1: { en: 'do not attack cambodian targets', km: 'កុំវាយគោលដៅនៅកម្ពុជា' },
+  tos1d: { en: 'any target hosted in cambodia or owned by cambodian entities is off limits. we are cambodia based and we protect our local infrastructure.', km: 'គោលដៅណាដែលបង្ហោះនៅកម្ពុជា ឬជាកម្មសិទ្ធិរបស់អង្គភាពខ្មែរត្រូវបានហាមឃាត់។ យើងឈរលើមូលដ្ឋាននៅកម្ពុជា ហើយយើងការពារហេដ្ឋារចនាសម្ព័ន្ធក្នុងស្រុករបស់យើង។' },
   tos2: { en: 'do not attack gov or edu targets', km: 'ហាមវាយគោលដៅ .gov និង .edu' },
-  tos3: { en: 'do not share proof/screenshots publicly', km: 'កុំចែករំលែកភស្តុតាងជាសាធារណៈ' },
-  tos4: { en: 'you need permission from target owner', km: 'ត្រូវការការអនុញ្ញាតពីម្ចាស់គោលដៅ' },
+  tos2d: { en: 'government websites and educational institutions are strictly prohibited. this includes all .gov, .edu, .mil, .gov.kh, .edu.kh and similar domains. no exceptions regardless of country.', km: 'គេហទំព័ររដ្ឋាភិបាល និងស្ថាប័នអប់រំត្រូវបានហាមឃាត់ជាដាច់ខាត។ រួមបញ្ចូលទាំង .gov, .edu, .mil, .gov.kh, .edu.kh និងដែនស្រដៀងគ្នាទាំងអស់។ គ្មានករណីលើកលែងដោយមិនគិតពីប្រទេសឡើយ។' },
+  tos3: { en: 'do not share proof or screenshots publicly', km: 'កុំចែករំលែកភស្តុតាងជាសាធារណៈ' },
+  tos3d: { en: 'do not post screenshots, videos, or any proof of attacks on public forums, social media, or anywhere else. what you do with our service is your business. keeping it private protects both you and us.', km: 'កុំបង្ហោះរូបភាព វីដេអូ ឬភស្តុតាងនៃការវាយប្រហារនៅលើវេទិកាសាធារណៈ បណ្ដាញសង្គម ឬកន្លែងណាផ្សេងទៀត។ អ្វីដែលអ្នកធ្វើជាមួយសេវាកម្មរបស់យើងគឺជារឿងផ្ទាល់ខ្លួនរបស់អ្នក។ ការរក្សាវាឲ្យឯកជនការពារទាំងអ្នក និងយើង។' },
+  tos4: { en: 'you need written permission from the target owner', km: 'ត្រូវការការអនុញ្ញាតជាលាយលក្ខណ៍អក្សរពីម្ចាស់គោលដៅ' },
+  tos4d: { en: 'before testing any target that is not your own property, you must obtain explicit written permission from the owner. verbal agreements are not enough. we may request proof of authorization at any time. testing without permission is a violation of our terms.', km: 'មុនពេលធ្វើតេស្តលើគោលដៅណាដែលមិនមែនជាកម្មសិទ្ធិរបស់អ្នក អ្នកត្រូវតែទទួលបានការអនុញ្ញាតជាលាយលក្ខណ៍អក្សរពីម្ចាស់។ ការយល់ព្រមដោយផ្ទាល់មាត់មិនគ្រប់គ្រាន់ទេ។ យើងអាចស្នើសុំភស្តុតាងនៃការអនុញ្ញាតនៅពេលណាមួយ។ ការធ្វើតេស្តដោយគ្មានការអនុញ្ញាតគឺជាការបំពានលើលក្ខខណ្ឌរបស់យើង។' },
   tos5: { en: 'no reselling or sharing access', km: 'ហាមលក់បន្ត ឬចែករំលែក access' },
+  tos5d: { en: 'your access to rikixz stresser is personal and non transferable. you may not resell, share, give away, or sublicense your access to anyone else. each user must purchase their own access. violating this rule will result in immediate termination of all related accounts.', km: 'ការចូលប្រើ rikixz stresser របស់អ្នកគឺជាផ្ទាល់ខ្លួន និងមិនអាចផ្ទេរបានទេ។ អ្នកមិនអាចលក់បន្ត ចែករំលែក ឲ្យដោយឥតគិតថ្លៃ ឬផ្តល់សិទ្ធិបន្តដល់អ្នកដទៃបានទេ។ អ្នកប្រើម្នាក់ៗត្រូវតែទិញ access ផ្ទាល់ខ្លួន។ ការបំពានច្បាប់នេះនឹងនាំឲ្យមានការបញ្ចប់គណនីដែលពាក់ព័ន្ធទាំងអស់ភ្លាមៗ។' },
   tos6: { en: 'no refunds if you break the rules', km: 'មិនសងលុយវិញទេ បើអ្នកបំពានច្បាប់' },
+  tos6d: { en: 'all sales are final. we do not offer refunds for any reason, especially if you are banned for violating these terms. by purchasing you agree that you have read and understood these rules. if you are unsure about any rule, ask us on telegram before ordering.', km: 'ការលក់ទាំងអស់គឺចប់។ យើងមិនផ្តល់ការសងប្រាក់វិញសម្រាប់ហេតុផលណាមួយទេ ជាពិសេសប្រសិនបើអ្នកត្រូវបានបណ្ដេញចេញដោយសារការបំពានលក្ខខណ្ឌទាំងនេះ។ តាមរយៈការទិញ អ្នកយល់ព្រមថាអ្នកបានអាន និងយល់ពីច្បាប់ទាំងនេះហើយ។ ប្រសិនបើអ្នកមិនច្បាស់អំពីច្បាប់ណាមួយ សូមសួរមកយើងតាម Telegram មុនពេលបញ្ជាទិញ។' },
+  tos7: { en: 'no attack on cambodian infrastructure', km: 'ហាមវាយហេដ្ឋារចនាសម្ព័ន្ធកម្ពុជា' },
+  tos7d: { en: 'this includes cambodian ISPs, cambodian hosting providers, cambodian government services, and any cambodian owned online service. we are a cambodian service and we respect our country.', km: 'នេះរួមបញ្ចូល ISP កម្ពុជា អ្នកផ្តល់សេវាបង្ហោះនៅកម្ពុជា សេវារដ្ឋាភិបាលកម្ពុជា និងសេវាកម្មអនឡាញណាដែលជាកម្មសិទ្ធិរបស់ខ្មែរ។ យើងជាសេវាកម្មខ្មែរ ហើយយើងគោរពប្រទេសរបស់យើង។' },
   contact_title: { en: 'contact', km: 'ទំនាក់ទំនង' },
   contact_sub: { en: 'hit us up on telegram.', km: 'ទាក់ទងមកយើងតាម Telegram។' },
   channel: { en: 'channel: @rikixzapi', km: 'ឆានែល៖ @rikixzapi' },
@@ -328,6 +344,10 @@ const t = {
           { q: t.faq4_q[lang], a: t.faq4_a[lang] },
           { q: t.faq5_q[lang], a: t.faq5_a[lang] },
           { q: t.faq6_q[lang], a: t.faq6_a[lang] },
+          { q: t.faq7_q[lang], a: t.faq7_a[lang] },
+          { q: t.faq8_q[lang], a: t.faq8_a[lang] },
+          { q: t.faq9_q[lang], a: t.faq9_a[lang] },
+          { q: t.faq10_q[lang], a: t.faq10_a[lang] },
         ]" :key="i" class="faq-item" :class="{ open: faqOpen === i }">
           <button class="faq-q" @click="toggleFaq(i)">
             {{ item.q }}
@@ -386,14 +406,57 @@ const t = {
       </div>
       <div class="tos-box">
         <div class="tos-warn">{{ t.tos_warn[lang] }}</div>
-        <ul class="tos-list">
-          <li><span class="chk">+</span> {{ t.tos1[lang] }}</li>
-          <li><span class="chk">+</span> {{ t.tos2[lang] }}</li>
-          <li><span class="chk">+</span> {{ t.tos3[lang] }}</li>
-          <li><span class="chk">+</span> {{ t.tos4[lang] }}</li>
-          <li><span class="chk">+</span> {{ t.tos5[lang] }}</li>
-          <li><span class="chk">+</span> {{ t.tos6[lang] }}</li>
-        </ul>
+        <div class="tos-list">
+          <div class="tos-item">
+            <div class="tos-num">1</div>
+            <div class="tos-body">
+              <strong>{{ t.tos1[lang] }}</strong>
+              <span>{{ t.tos1d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">2</div>
+            <div class="tos-body">
+              <strong>{{ t.tos2[lang] }}</strong>
+              <span>{{ t.tos2d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">3</div>
+            <div class="tos-body">
+              <strong>{{ t.tos3[lang] }}</strong>
+              <span>{{ t.tos3d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">4</div>
+            <div class="tos-body">
+              <strong>{{ t.tos4[lang] }}</strong>
+              <span>{{ t.tos4d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">5</div>
+            <div class="tos-body">
+              <strong>{{ t.tos5[lang] }}</strong>
+              <span>{{ t.tos5d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">6</div>
+            <div class="tos-body">
+              <strong>{{ t.tos6[lang] }}</strong>
+              <span>{{ t.tos6d[lang] }}</span>
+            </div>
+          </div>
+          <div class="tos-item">
+            <div class="tos-num">7</div>
+            <div class="tos-body">
+              <strong>{{ t.tos7[lang] }}</strong>
+              <span>{{ t.tos7d[lang] }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -714,13 +777,16 @@ a { color:inherit; text-decoration:none }
 .pfeats li.out span { color:#ccc }
 
 .btn-order {
-  display:block;margin:0 24px 24px;padding:12px 0;border-radius:10px;
-  font-weight:600;font-size:14px;text-align:center;cursor:pointer;transition:all .25s;
-  background:var(--bg);color:var(--text);border:1px solid var(--border);text-decoration:none
+  display:block;margin:0 24px 24px;padding:13px 0;border-radius:10px;
+  font-weight:700;font-size:14px;text-align:center;cursor:pointer;transition:all .3s;
+  background:var(--card);color:var(--head);border:2px solid var(--border);
+  text-decoration:none;letter-spacing:.3px;text-transform:uppercase
 }
-.btn-order:hover { background:var(--card-h);border-color:var(--accent);color:var(--accent) }
-.btn-order-pop { background:var(--accent);color:#fff;border-color:var(--accent) }
-.btn-order-pop:hover { background:var(--accent2) !important;border-color:var(--accent2) !important;color:#fff !important }
+.btn-order:hover { background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 4px 20px rgba(255,38,102,.2) }
+.btn-order-pop { background:var(--accent);color:#fff;border-color:var(--accent);position:relative;overflow:hidden }
+.btn-order-pop::after { content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transform:translateX(-100%);transition:transform .5s }
+.btn-order-pop:hover { box-shadow:0 6px 28px rgba(255,38,102,.35)!important;transform:translateY(-1px) }
+.btn-order-pop:hover::after { transform:translateX(100%) }
 .chk { color:var(--green);font-weight:700;font-family:var(--mono);flex-shrink:0 }
 .x { color:var(--text2);font-weight:700;font-family:var(--mono);flex-shrink:0;opacity:.4 }
 
@@ -758,17 +824,28 @@ a { color:inherit; text-decoration:none }
 
 /* tos */
 .tos-box {
-  max-width:600px;margin:0 auto;background:var(--card);
+  max-width:720px;margin:0 auto;background:var(--card);
   border:1px solid var(--border);border-radius:16px;padding:36px 32px;transition:all .3s;
   animation:fade-up .5s ease-out both
 }
 .tos-warn {
   text-align:center;font-size:14px;font-weight:600;color:var(--accent);
-  padding:12px 20px;background:rgba(255,38,102,.1);border-radius:10px;margin-bottom:24px;
+  padding:14px 20px;background:rgba(255,38,102,.1);border-radius:10px;margin-bottom:28px;
   border:1px solid rgba(255,38,102,.2);animation:pulse-glow 3s ease-in-out infinite
 }
-.tos-list { list-style:none;display:flex;flex-direction:column;gap:10px }
-.tos-list li { display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text2) }
+.tos-list { display:flex;flex-direction:column;gap:12px }
+.tos-item {
+  display:flex;gap:14px;padding:14px 18px;border-radius:10px;
+  transition:all .25s;border:1px solid var(--border)
+}
+.tos-item:hover { border-color:rgba(255,38,102,.2);background:rgba(255,38,102,.03);transform:translateX(4px) }
+.tos-num {
+  flex-shrink:0;width:28px;height:28px;border-radius:8px;background:rgba(255,38,102,.1);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--accent)
+}
+.tos-body { flex:1;min-width:0 }
+.tos-body strong { display:block;font-size:14px;font-weight:700;color:var(--head);margin-bottom:4px }
+.tos-body span { font-size:13px;color:var(--text2);line-height:1.5;display:block }
 
 /* contact */
 .contact-sec { text-align:center }
@@ -840,7 +917,7 @@ a { color:inherit; text-decoration:none }
   .pperiod { font-size:12px }
   .pfeats { padding:12px 20px }
   .pfeats li { padding:8px 0;font-size:12px }
-  .btn-order { margin:0 20px 20px;padding:10px 0;font-size:13px }
+  .btn-order { margin:0 20px 20px;padding:11px 0;font-size:13px }
 
   .faq-q { padding:14px 16px;font-size:13px }
   .faq-a p { font-size:12px }
@@ -851,9 +928,12 @@ a { color:inherit; text-decoration:none }
   .why-item span { font-size:12px }
   .why-item .chk { font-size:16px }
 
-  .tos-box { padding:20px 16px }
-  .tos-warn { font-size:13px;padding:10px 14px }
-  .tos-list li { font-size:13px }
+  .tos-box { padding:24px 18px }
+  .tos-warn { font-size:13px;padding:12px 16px;margin-bottom:20px }
+  .tos-item { padding:12px 14px;gap:10px }
+  .tos-num { width:24px;height:24px;font-size:11px }
+  .tos-body strong { font-size:13px }
+  .tos-body span { font-size:12px }
 
   .contact-links { flex-direction:column;align-items:stretch;gap:8px;max-width:320px;margin:0 auto }
   .clink { padding:10px 20px;font-size:13px;justify-content:center }
@@ -907,7 +987,7 @@ a { color:inherit; text-decoration:none }
   .pfeats { padding:12px 18px }
   .pfeats li { padding:8px 0;font-size:12px;gap:8px }
   .pop-tag { font-size:10px;padding:5px }
-  .btn-order { margin:0 18px 18px;padding:10px 0;font-size:13px;border-radius:9px }
+  .btn-order { margin:0 18px 18px;padding:11px 0;font-size:13px;border-radius:9px }
 
   .faq-q { padding:14px 16px;font-size:13px }
   .faq-item.open .faq-a { padding:0 16px 14px }

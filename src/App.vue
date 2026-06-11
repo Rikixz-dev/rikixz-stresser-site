@@ -260,50 +260,56 @@ const t = {
       </div>
       <div class="prices">
         <div class="pcard">
-          <div class="pname">{{ t.basic[lang] }}</div>
-          <div class="pprice"><span class="dollar">$</span>5</div>
-          <div class="pperiod">60 {{ t.seconds[lang] }}</div>
+          <div class="pcard-top">
+            <div class="pname">{{ t.basic[lang] }}</div>
+            <div class="pprice"><span class="dollar">$</span>5</div>
+            <div class="pperiod">60 {{ t.seconds[lang] }}</div>
+          </div>
           <ul class="pfeats">
-            <li><span class="chk">+</span> {{ t.method_l7[lang] }}</li>
-            <li><span class="chk">+</span> 60s {{ t.seconds[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.basic_bypass[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.tg_support[lang] }}</li>
-            <li><span class="x">-</span> {{ t.cf_bypass[lang] }}</li>
-            <li><span class="x">-</span> {{ t.priority_queue[lang] }}</li>
-            <li><span class="x">-</span> {{ t.concurrent[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.method_l7[lang] }}</li>
+            <li class="in"><span>&#10003;</span> 60s {{ t.seconds[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.basic_bypass[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.tg_support[lang] }}</li>
+            <li class="out"><span>&#10007;</span> {{ t.cf_bypass[lang] }}</li>
+            <li class="out"><span>&#10007;</span> {{ t.priority_queue[lang] }}</li>
+            <li class="out"><span>&#10007;</span> {{ t.concurrent[lang] }}</li>
           </ul>
-          <a href="#contact" class="btn-primary btn-sm">{{ t.order_btn[lang] }}</a>
+          <a href="#contact" class="btn-order">{{ t.order_btn[lang] }}</a>
         </div>
         <div class="pcard pop">
           <div class="pop-tag">{{ t.bestseller[lang] }}</div>
-          <div class="pname">{{ t.standard[lang] }}</div>
-          <div class="pprice"><span class="dollar">$</span>10</div>
-          <div class="pperiod">130 {{ t.seconds[lang] }}</div>
+          <div class="pcard-top">
+            <div class="pname">{{ t.standard[lang] }}</div>
+            <div class="pprice"><span class="dollar">$</span>10</div>
+            <div class="pperiod">130 {{ t.seconds[lang] }}</div>
+          </div>
           <ul class="pfeats">
-            <li><span class="chk">+</span> {{ t.method_l7[lang] }}</li>
-            <li><span class="chk">+</span> 130s {{ t.seconds[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.basic_bypass[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.tg_support[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.cf_bypass[lang] }}</li>
-            <li><span class="x">-</span> {{ t.priority_queue[lang] }}</li>
-            <li><span class="x">-</span> {{ t.concurrent[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.method_l7[lang] }}</li>
+            <li class="in"><span>&#10003;</span> 130s {{ t.seconds[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.basic_bypass[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.tg_support[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.cf_bypass[lang] }}</li>
+            <li class="out"><span>&#10007;</span> {{ t.priority_queue[lang] }}</li>
+            <li class="out"><span>&#10007;</span> {{ t.concurrent[lang] }}</li>
           </ul>
-          <a href="#contact" class="btn-primary btn-sm">{{ t.order_btn[lang] }}</a>
+          <a href="#contact" class="btn-order btn-order-pop">{{ t.order_btn[lang] }}</a>
         </div>
         <div class="pcard">
-          <div class="pname">{{ t.premium[lang] }}</div>
-          <div class="pprice"><span class="dollar">$</span>15</div>
-          <div class="pperiod">200 {{ t.seconds[lang] }}</div>
+          <div class="pcard-top">
+            <div class="pname">{{ t.premium[lang] }}</div>
+            <div class="pprice"><span class="dollar">$</span>15</div>
+            <div class="pperiod">200 {{ t.seconds[lang] }}</div>
+          </div>
           <ul class="pfeats">
-            <li><span class="chk">+</span> {{ t.method_l7[lang] }}</li>
-            <li><span class="chk">+</span> 200s {{ t.seconds[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.advanced_bypass[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.tg_support[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.cf_bypass[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.priority_queue[lang] }}</li>
-            <li><span class="chk">+</span> {{ t.concurrent[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.method_l7[lang] }}</li>
+            <li class="in"><span>&#10003;</span> 200s {{ t.seconds[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.advanced_bypass[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.tg_support[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.cf_bypass[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.priority_queue[lang] }}</li>
+            <li class="in"><span>&#10003;</span> {{ t.concurrent[lang] }}</li>
           </ul>
-          <a href="#contact" class="btn-primary btn-sm">{{ t.order_btn[lang] }}</a>
+          <a href="#contact" class="btn-order">{{ t.order_btn[lang] }}</a>
         </div>
       </div>
     </section>
@@ -499,33 +505,42 @@ a { color:inherit; text-decoration:none }
 /* topbar */
 .topbar {
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(255,255,255,.92);backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);padding:0 20px
+  background:rgba(255,255,255,.95);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);padding:0 24px;
+  transition:box-shadow .3s
 }
+.topbar:hover { box-shadow:0 2px 24px rgba(0,0,0,.04) }
 .topbar-in {
-  max-width:1100px;margin:0 auto;display:flex;
-  align-items:center;justify-content:space-between;height:56px
+  max-width:1200px;margin:0 auto;display:flex;
+  align-items:center;justify-content:space-between;height:64px
 }
-.logo { display:flex;align-items:center;gap:10px;font-weight:800;font-size:16px;color:var(--accent);letter-spacing:-.3px }
-.logo-img { width:32px;height:32px;border-radius:8px;object-fit:cover;border:2px solid rgba(255,38,102,.3);flex-shrink:0 }
-.topbar-right { display:flex;align-items:center;gap:16px }
-.topbar-right a { font-size:13px;font-weight:500;color:var(--text2);transition:color .15s;white-space:nowrap }
-.topbar-right a:hover { color:var(--text) }
+.logo { display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;color:var(--accent);letter-spacing:-.5px }
+.logo-img { width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 rgba(255,38,102,.2) }
+.logo:hover .logo-img { transform:scale(1.05);box-shadow:0 0 0 3px rgba(255,38,102,.2) }
+.topbar-right { display:flex;align-items:center;gap:24px }
+.topbar-right a { font-size:13px;font-weight:500;color:var(--text2);transition:color .2s;white-space:nowrap;position:relative;padding:4px 0 }
+.topbar-right a::after { content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--accent);transition:width .25s;border-radius:2px }
+.topbar-right a:hover { color:var(--accent) }
+.topbar-right a:hover::after { width:100% }
 .lang-btn {
-  background:var(--card);border:1px solid var(--border);color:var(--text);padding:4px 12px;
-  border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;transition:all .2s;
+  background:var(--card);border:1px solid var(--border);color:var(--text);padding:5px 14px;
+  border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .2s;
   font-family:var(--font);letter-spacing:.5px;text-transform:uppercase
 }
-.lang-btn:hover { border-color:var(--accent);color:var(--accent);background:var(--card-h) }
+.lang-btn:hover { border-color:var(--accent);color:var(--accent);background:var(--card-h);box-shadow:0 0 12px rgba(255,38,102,.08) }
 .topbar-cta {
-  background:var(--accent);color:#fff!important;padding:6px 16px;
-  border-radius:6px;font-weight:600!important;font-size:12px!important
+  background:var(--accent);color:#fff!important;padding:8px 20px;
+  border-radius:8px;font-weight:600!important;font-size:13px!important;
+  transition:all .25s!important
 }
+.topbar-cta::after { display:none!important }
+.topbar-cta:hover { background:var(--accent2)!important;transform:translateY(-1px);box-shadow:0 4px 16px rgba(255,38,102,.3)!important }
 
 /* hero */
 .hero-sec {
   min-height:100vh;display:flex;align-items:center;justify-content:center;
-  text-align:center;padding:100px 24px 60px;position:relative;overflow:hidden
+  text-align:center;padding:100px 24px 60px;position:relative;overflow:hidden;
+  background:linear-gradient(180deg, rgba(255,38,102,.03) 0%, transparent 50%, rgba(136,51,255,.02) 100%)
 }
 .hero-overlay {
   position:absolute;inset:0;
@@ -534,11 +549,11 @@ a { color:inherit; text-decoration:none }
 .hero-overlay::before {
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(255,38,102,.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, rgba(136,51,255,.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 15% 60%, rgba(255,38,102,.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 30%, rgba(136,51,255,.1) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 80%, rgba(0,187,102,.06) 0%, transparent 50%);
   background-size:200% 200%;
-  animation:gradient-shift 8s ease infinite
+  animation:gradient-shift 10s ease infinite
 }
 .hero-overlay::after {
   content:'';position:absolute;inset:0;
@@ -547,26 +562,31 @@ a { color:inherit; text-decoration:none }
     linear-gradient(90deg,rgba(255,38,102,.06) 1px,transparent 1px);
   background-size:50px 50px;
   pointer-events:none;
-  opacity:.5
+  opacity:.3
 }
 .hero-particles { position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0 }
 .particle {
-  position:absolute;bottom:0;left:var(--x);width:4px;height:4px;
+  position:absolute;bottom:0;left:var(--x);width:5px;height:5px;
   border-radius:50%;background:var(--accent);opacity:0;
-  animation:float-particle calc(var(--s)*3s) linear var(--d) infinite
+  animation:float-particle calc(var(--s)*4s) linear var(--d) infinite
 }
-.hero-in { position:relative;z-index:1;max-width:680px }
-.hero-logo { width:100px;height:100px;border-radius:24px;object-fit:cover;margin-bottom:20px;border:2px solid rgba(255,38,102,.15);animation:pulse-glow 3s ease-in-out infinite }
+.hero-in { position:relative;z-index:1;max-width:720px }
+.hero-logo {
+  width:110px;height:110px;border-radius:28px;object-fit:cover;margin-bottom:24px;
+  box-shadow:0 0 0 2px rgba(255,38,102,.15), 0 0 40px rgba(255,38,102,.1);
+  animation:pulse-glow 3s ease-in-out infinite;transition:transform .3s
+}
+.hero-logo:hover { transform:scale(1.05) }
 .hero-badge {
-  display:inline-block;padding:6px 18px;border:1px solid rgba(255,38,102,.3);
-  border-radius:20px;font-size:12px;font-weight:600;color:var(--accent);
-  text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;animation:fade-up .6s ease-out both;
-  background:rgba(255,38,102,.06);backdrop-filter:blur(4px);
-  box-shadow:0 0 20px rgba(255,38,102,.1)
+  display:inline-block;padding:7px 22px;border:1px solid var(--accent);
+  border-radius:20px;font-size:11px;font-weight:700;color:var(--accent);
+  text-transform:uppercase;letter-spacing:1.5px;margin-bottom:24px;animation:fade-up .6s ease-out both;
+  background:rgba(255,38,102,.06);backdrop-filter:blur(8px);
+  box-shadow:0 0 24px rgba(255,38,102,.08)
 }
 .hero-title {
-  font-size:clamp(44px, 10vw, 80px);font-weight:900;line-height:1;
-  letter-spacing:-3px;margin-bottom:16px;animation:fade-up .6s ease-out .15s both;
+  font-size:clamp(48px, 11vw, 90px);font-weight:900;line-height:.9;
+  letter-spacing:-4px;margin-bottom:20px;
   background:linear-gradient(135deg, var(--head) 0%, var(--accent) 50%, var(--head) 100%);
   background-size:200% auto;
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
@@ -574,30 +594,30 @@ a { color:inherit; text-decoration:none }
 }
 .hero-title:hover { animation:glitch .3s ease-in-out, text-shimmer 4s linear infinite }
 .hero-sub {
-  font-size:16px;color:var(--text2);max-width:480px;margin:0 auto 28px;line-height:1.7;
+  font-size:17px;color:var(--text2);max-width:540px;margin:0 auto 32px;line-height:1.7;
   animation:fade-up .6s ease-out .3s both
 }
-.hero-btns { display:flex;gap:10px;justify-content:center;flex-wrap:wrap;animation:fade-up .6s ease-out .45s both }
+.hero-btns { display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:fade-up .6s ease-out .45s both }
 .btn-primary {
-  display:inline-flex;padding:14px 32px;background:var(--gradient);background-size:200% auto;color:#fff;
-  border-radius:10px;font-weight:600;font-size:14px;transition:all .3s;border:none;cursor:pointer;
+  display:inline-flex;padding:16px 36px;background:var(--gradient);background-size:200% auto;color:#fff;
+  border-radius:12px;font-weight:700;font-size:14px;transition:all .3s;border:none;cursor:pointer;
   background-size:200% auto;animation:gradient-shift 4s ease infinite;position:relative;
-  overflow:hidden
+  overflow:hidden;text-transform:uppercase;letter-spacing:.5px
 }
-.btn-primary::after { content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);transform:translateX(-100%);transition:transform .4s }
+.btn-primary::after { content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);transform:translateX(-100%);transition:transform .5s }
 .btn-primary:hover { transform:translateY(-3px);box-shadow:0 8px 40px rgba(255,38,102,.4) }
 .btn-primary:hover::after { transform:translateX(100%) }
 .btn-ghost {
-  display:inline-flex;padding:14px 32px;background:rgba(255,255,255,.7);color:var(--text);
-  border-radius:10px;font-weight:600;font-size:14px;border:1px solid var(--border);transition:all .3s;
-  backdrop-filter:blur(4px)
+  display:inline-flex;padding:16px 36px;background:rgba(255,255,255,.75);color:var(--text);
+  border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--border);transition:all .3s;
+  backdrop-filter:blur(4px);text-transform:uppercase;letter-spacing:.5px
 }
-.btn-ghost:hover { border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,38,102,.15);background:#fff }
+.btn-ghost:hover { border-color:var(--accent);transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,38,102,.12);background:#fff;color:var(--accent) }
 .btn-sm { padding:10px 20px;font-size:13px }
-.hero-stats { display:flex;gap:36px;justify-content:center;margin-top:48px;flex-wrap:wrap;animation:fade-up .6s ease-out .6s both }
-.stat { text-align:center;transition:all .3s }
-.stat:hover { transform:translateY(-4px) }
-.stat-n { display:block;font-size:26px;font-weight:800;color:var(--head);font-family:var(--mono);transition:color .3s }
+.hero-stats { display:flex;gap:40px;justify-content:center;margin-top:52px;flex-wrap:wrap;animation:fade-up .6s ease-out .6s both }
+.stat { text-align:center;transition:all .3s;padding:8px 16px;border-radius:12px;background:rgba(255,255,255,.5);border:1px solid var(--border) }
+.stat:hover { transform:translateY(-4px);border-color:rgba(255,38,102,.2);background:rgba(255,38,102,.04) }
+.stat-n { display:block;font-size:26px;font-weight:800;color:var(--head);font-family:var(--mono);transition:color .3s;letter-spacing:-1px }
 .stat:hover .stat-n { color:var(--accent) }
 .stat-l { font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--text2);margin-top:2px;display:block }
 
@@ -659,34 +679,48 @@ a { color:inherit; text-decoration:none }
 .sbadge.lim { background:rgba(255,102,51,.1);color:#ff6633 }
 
 /* pricing */
-.prices { display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;align-items:start }
+.prices { display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;align-items:start }
 .pcard {
-  background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 24px;
-  text-align:center;position:relative;transition:all .4s cubic-bezier(.22,1,.36,1);animation:fade-up .5s ease-out both;
-  overflow:hidden;display:flex;flex-direction:column
+  background:var(--card);border:1px solid var(--border);border-radius:16px;
+  text-align:center;position:relative;transition:all .3s ease;animation:fade-up .5s ease-out both;
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 8px rgba(0,0,0,.04)
 }
-.pcard::before { content:'';position:absolute;inset:0;opacity:0;background:linear-gradient(135deg,rgba(255,38,102,.04),transparent 60%);transition:opacity .4s;pointer-events:none }
-.pcard > * { position:relative;z-index:1 }
 .pcard:nth-child(1) { animation-delay:0s }
 .pcard:nth-child(2) { animation-delay:.1s }
 .pcard:nth-child(3) { animation-delay:.2s }
-.pcard:hover { border-color:var(--accent);transform:translateY(-6px);box-shadow:0 16px 60px rgba(255,38,102,.2) }
-.pcard:hover::before { opacity:1 }
-.pcard.pop { border-color:var(--accent);background:linear-gradient(180deg,rgba(255,38,102,.1),var(--card));animation:border-glow 2s ease-in-out infinite,fade-up .5s ease-out both }
-.pcard.pop:nth-child(2) { animation-delay:.1s;animation:border-glow 2s ease-in-out infinite,fade-up .5s ease-out both;animation-delay:.1s }
+.pcard:hover { transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,38,102,.1);border-color:var(--accent) }
+
+.pcard.pop { border-color:var(--accent);border-width:2px;box-shadow:0 4px 24px rgba(255,38,102,.08) }
+.pcard.pop:hover { box-shadow:0 12px 48px rgba(255,38,102,.18) }
 .pop-tag {
-  position:absolute;top:-10px;left:50%;transform:translateX(-50%);
-  background:var(--accent);color:#fff;padding:3px 14px;border-radius:20px;
-  font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase
+  position:absolute;top:0;left:0;right:0;
+  background:var(--accent);color:#fff;padding:5px;
+  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase
 }
-.pname { font-size:14px;font-weight:600;color:var(--text2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px }
-.pprice { font-size:44px;font-weight:900;color:var(--head);letter-spacing:-2px;margin-bottom:2px;line-height:1 }
-.dollar { font-size:22px;font-weight:600;color:var(--text2);vertical-align:super }
-.pperiod { font-size:13px;color:var(--text2);margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--border) }
-.pfeats { list-style:none;text-align:left;margin:0 0 22px;flex:1 }
-.pfeats li { display:flex;align-items:center;gap:8px;padding:10px 0;font-size:13px;color:var(--text2);border-bottom:1px solid var(--border) }
+
+.pcard-top { padding:32px 24px 20px;border-bottom:1px solid var(--border) }
+.pcard.pop .pcard-top { padding-top:42px }
+
+.pname { font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px }
+.pprice { font-size:46px;font-weight:900;color:var(--head);letter-spacing:-2px;line-height:1;margin-bottom:4px }
+.dollar { font-size:20px;font-weight:600;color:var(--text2);vertical-align:super;margin-right:2px }
+.pperiod { font-size:13px;color:var(--text2) }
+
+.pfeats { list-style:none;text-align:left;margin:0;padding:16px 24px;flex:1;display:flex;flex-direction:column;gap:0 }
+.pfeats li { display:flex;align-items:center;gap:10px;padding:10px 0;font-size:13px;color:var(--text2);border-bottom:1px solid var(--border) }
 .pfeats li:last-child { border-bottom:none }
-.pcard .btn-sm { margin-top:auto }
+.pfeats li span { font-weight:700;font-size:14px;flex-shrink:0;width:18px;text-align:center }
+.pfeats li.in span { color:var(--green) }
+.pfeats li.out span { color:#ccc }
+
+.btn-order {
+  display:block;margin:0 24px 24px;padding:12px 0;border-radius:10px;
+  font-weight:600;font-size:14px;text-align:center;cursor:pointer;transition:all .25s;
+  background:var(--bg);color:var(--text);border:1px solid var(--border);text-decoration:none
+}
+.btn-order:hover { background:var(--card-h);border-color:var(--accent);color:var(--accent) }
+.btn-order-pop { background:var(--accent);color:#fff;border-color:var(--accent) }
+.btn-order-pop:hover { background:var(--accent2) !important;border-color:var(--accent2) !important;color:#fff !important }
 .chk { color:var(--green);font-weight:700;font-family:var(--mono);flex-shrink:0 }
 .x { color:var(--text2);font-weight:700;font-family:var(--mono);flex-shrink:0;opacity:.4 }
 
@@ -797,11 +831,16 @@ a { color:inherit; text-decoration:none }
   .tbl th,.tbl td { padding:10px 12px }
   .mname { font-size:12px }
 
-  .prices { grid-template-columns:1fr;gap:12px;max-width:380px;margin:0 auto }
-  .pcard { padding:22px 20px }
+  .prices { grid-template-columns:1fr;gap:16px;max-width:360px;margin:0 auto }
+  .pcard-top { padding:24px 20px 16px }
+  .pcard.pop .pcard-top { padding-top:36px }
+  .pname { font-size:12px }
   .pprice { font-size:36px }
-  .dollar { font-size:18px }
-  .pperiod { font-size:12px;margin-bottom:16px;padding-bottom:12px }
+  .dollar { font-size:17px }
+  .pperiod { font-size:12px }
+  .pfeats { padding:12px 20px }
+  .pfeats li { padding:8px 0;font-size:12px }
+  .btn-order { margin:0 20px 20px;padding:10px 0;font-size:13px }
 
   .faq-q { padding:14px 16px;font-size:13px }
   .faq-a p { font-size:12px }
@@ -824,64 +863,67 @@ a { color:inherit; text-decoration:none }
   .ftr-small { font-size:11px }
 }
 @media(max-width:480px) {
-  .topbar-in { height:46px }
-  .topbar-right { gap:4px }
-  .topbar-right a { font-size:11px }
-  .topbar-cta { padding:4px 10px;font-size:10px!important }
-  .lang-btn { padding:2px 6px;font-size:9px;border-radius:4px }
-  .logo-img { width:22px;height:22px;border-width:1px }
-  .logo { font-size:12px;gap:5px }
+  .topbar-in { height:48px }
+  .topbar-right { gap:6px }
+  .topbar-right a { font-size:11px;font-weight:600 }
+  .topbar-cta { padding:5px 12px;font-size:11px!important;border-radius:6px }
+  .lang-btn { padding:3px 8px;font-size:10px;border-radius:5px }
+  .logo-img { width:26px;height:26px }
+  .logo { font-size:14px;gap:6px }
 
-  .hero-sec { padding:60px 12px 30px;min-height:85vh }
-  .hero-logo { width:60px;height:60px;border-radius:14px;margin-bottom:14px }
-  .hero-title { font-size:clamp(24px,12vw,34px);letter-spacing:-1px;margin-bottom:10px }
-  .hero-sub { font-size:13px;margin-bottom:20px }
-  .hero-badge { font-size:9px;padding:3px 10px;margin-bottom:12px }
-  .btn-primary,.btn-ghost { padding:8px 16px;font-size:12px;border-radius:8px }
-  .hero-stats { gap:14px;margin-top:24px }
-  .stat-n { font-size:17px }
-  .stat-l { font-size:9px;letter-spacing:.5px }
+  .hero-sec { padding:72px 16px 40px;min-height:90vh }
+  .hero-logo { width:80px;height:80px;border-radius:20px;margin-bottom:18px }
+  .hero-title { font-size:clamp(32px,14vw,40px);letter-spacing:-2px;margin-bottom:14px }
+  .hero-sub { font-size:14px;margin-bottom:24px;max-width:100% }
+  .hero-badge { font-size:10px;padding:5px 14px;margin-bottom:16px }
+  .btn-primary,.btn-ghost { padding:12px 24px;font-size:13px;border-radius:10px }
+  .hero-stats { gap:16px;margin-top:28px }
+  .stat { padding:6px 12px }
+  .stat-n { font-size:18px }
+  .stat-l { font-size:10px;letter-spacing:.5px }
 
-  .sec { padding:30px 12px }
-  .sec-head { margin-bottom:20px }
-  .sec-head h2 { font-size:clamp(17px,5vw,20px);letter-spacing:0 }
-  .sec-head p { font-size:13px }
+  .sec { padding:36px 16px }
+  .sec-head { margin-bottom:24px }
+  .sec-head h2 { font-size:clamp(20px,6vw,24px);letter-spacing:-.5px }
+  .sec-head p { font-size:14px }
 
-  .feat { padding:12px;border-radius:8px }
-  .feat strong { font-size:12px }
-  .feat span { font-size:11px }
+  .feat { padding:14px;border-radius:10px }
+  .feat strong { font-size:13px }
+  .feat span { font-size:12px }
 
-  .client-card { padding:16px;border-radius:10px }
-  .client-stars { font-size:14px;letter-spacing:2px;margin-bottom:8px }
-  .client-text { font-size:12px;margin-bottom:8px }
+  .clients-grid { gap:10px }
+  .client-card { padding:18px;border-radius:12px }
+  .client-stars { font-size:14px;letter-spacing:3px;margin-bottom:10px }
+  .client-text { font-size:13px;margin-bottom:8px }
 
-  .tbl th,.tbl td { padding:8px 10px;font-size:12px }
+  .tbl th,.tbl td { padding:10px 12px;font-size:12px }
   .tbl th { font-size:10px }
 
-  .pcard { padding:18px 16px;border-radius:12px }
-  .pname { font-size:12px;margin-bottom:8px }
-  .pprice { font-size:30px }
-  .dollar { font-size:15px }
-  .pperiod { font-size:11px;margin-bottom:12px;padding-bottom:10px }
-  .pfeats li { padding:7px 0;font-size:12px;gap:6px }
-  .pop-tag { font-size:9px;padding:2px 10px;top:-8px }
-  .btn-sm { padding:8px 16px;font-size:12px }
+  .pcard-top { padding:22px 18px 14px }
+  .pcard.pop .pcard-top { padding-top:34px }
+  .pprice { font-size:34px }
+  .dollar { font-size:16px }
+  .pperiod { font-size:12px }
+  .pfeats { padding:12px 18px }
+  .pfeats li { padding:8px 0;font-size:12px;gap:8px }
+  .pop-tag { font-size:10px;padding:5px }
+  .btn-order { margin:0 18px 18px;padding:10px 0;font-size:13px;border-radius:9px }
 
-  .faq-q { padding:12px 14px;font-size:12px }
-  .faq-item.open .faq-a { padding:0 14px 12px }
+  .faq-q { padding:14px 16px;font-size:13px }
+  .faq-item.open .faq-a { padding:0 16px 14px }
 
-  .why-item { padding:12px;border-radius:8px }
-  .why-item strong { font-size:12px }
-  .why-item span { font-size:11px }
-  .why-item .chk { font-size:14px }
+  .why-item { padding:14px;border-radius:10px }
+  .why-item strong { font-size:13px }
+  .why-item span { font-size:12px }
+  .why-item .chk { font-size:16px }
 
-  .tos-box { padding:16px 12px;border-radius:12px }
-  .tos-warn { font-size:12px;padding:8px 12px }
-  .tos-list li { font-size:12px;gap:8px }
+  .tos-box { padding:18px 14px;border-radius:14px }
+  .tos-warn { font-size:13px;padding:10px 14px }
+  .tos-list li { font-size:13px;gap:8px }
 
-  .clink { padding:8px 16px;font-size:12px;border-radius:8px }
+  .clink { padding:10px 18px;font-size:13px;border-radius:9px }
 
-  .ftr { padding:16px 12px }
-  .ftr p { font-size:11px }
+  .ftr { padding:18px 16px }
+  .ftr p { font-size:12px }
 }
 </style>

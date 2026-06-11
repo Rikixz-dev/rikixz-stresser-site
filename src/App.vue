@@ -703,7 +703,7 @@ a { color:inherit; text-decoration:none }
 .faq-q:hover { color:var(--accent) }
 .arr { font-size:10px;color:var(--text2);transition:transform .2s;flex-shrink:0 }
 .faq-a { max-height:0;overflow:hidden;transition:max-height .25s,padding .25s }
-.faq-item.open .faq-a { max-height:200px;padding:0 20px 16px }
+.faq-item.open .faq-a { max-height:400px;padding:0 20px 16px }
 .faq-a p { font-size:13px;color:var(--text2);line-height:1.7 }
 
 /* why */
@@ -752,42 +752,136 @@ a { color:inherit; text-decoration:none }
 .ftr-small { margin-top:4px;font-size:12px }
 .ftr a { color:var(--accent) }
 
+@media(max-width:900px) {
+  .feats { grid-template-columns:repeat(auto-fit,minmax(240px,1fr)) }
+  .prices { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)) }
+}
 @media(max-width:768px) {
-  .topbar-right { gap:8px }
+  .topbar { padding:0 12px }
+  .topbar-in { height:52px }
+  .topbar-right { gap:6px }
   .topbar-right a:not(.topbar-cta):not(.lang-btn) { display:none }
-  .logo { font-size:14px }
-  .hero-title { font-size:clamp(34px,12vw,50px) }
-  .hero-sub { font-size:14px }
-  .sec-head h2 { font-size:clamp(20px,6vw,26px) }
-  .price { font-size:34px }
-  .feats { grid-template-columns:1fr }
-  .prices { grid-template-columns:1fr }
-  .hero-stats { gap:16px }
+  .topbar-cta { padding:5px 12px;font-size:11px!important }
+  .lang-btn { padding:3px 8px;font-size:10px }
+  .logo { font-size:14px;gap:6px }
+  .logo-img { width:26px;height:26px }
+
+  .hero-sec { padding:80px 16px 40px;min-height:90vh }
+  .hero-logo { width:72px;height:72px;border-radius:16px }
+  .hero-title { font-size:clamp(30px,10vw,44px);letter-spacing:-2px }
+  .hero-sub { font-size:14px;max-width:100%;padding:0 4px }
+  .hero-badge { font-size:10px;padding:4px 12px;margin-bottom:14px }
+  .hero-btns { gap:8px }
+  .btn-primary,.btn-ghost { padding:10px 22px;font-size:13px;flex:1;justify-content:center }
+  .hero-stats { gap:20px;margin-top:36px }
   .stat-n { font-size:20px }
-  .contact-links { flex-direction:column;align-items:center }
-  .pricing-grid { grid-template-columns:1fr }
-  .clients-grid { grid-template-columns:1fr }
-  .feat { padding:16px }
-  .pcard { padding:24px 20px }
-  .why-item { padding:16px }
-  .tos-box { padding:24px 20px }
-  .clink { padding:10px 20px;font-size:13px;width:100%;justify-content:center }
-  .sec { padding:50px 16px }
+  .stat-l { font-size:10px }
+
+  .sec { padding:40px 16px }
+  .sec-head { margin-bottom:28px }
+  .sec-head h2 { font-size:clamp(20px,5vw,24px) }
+  .sec-head p { font-size:14px }
+
+  .feats { grid-template-columns:1fr;gap:8px }
+  .feat { padding:14px;gap:10px }
+  .feat strong { font-size:13px }
+  .feat span { font-size:12px }
+
+  .clients-grid { grid-template-columns:1fr;gap:10px;max-width:100% }
+  .client-card { padding:20px }
+  .client-text { font-size:13px }
+  .client-name { font-size:12px }
+
+  .table-wrap { margin:0 -16px;padding:0 16px;width:auto }
+  .tbl { font-size:13px }
+  .tbl th,.tbl td { padding:10px 12px }
+  .mname { font-size:12px }
+
+  .prices { grid-template-columns:1fr;gap:12px;max-width:380px;margin:0 auto }
+  .pcard { padding:22px 20px }
+  .pprice { font-size:36px }
+  .dollar { font-size:18px }
+  .pperiod { font-size:12px;margin-bottom:16px;padding-bottom:12px }
+
+  .faq-q { padding:14px 16px;font-size:13px }
+  .faq-a p { font-size:12px }
+
+  .why-box { gap:8px }
+  .why-item { padding:14px;gap:10px }
+  .why-item strong { font-size:13px }
+  .why-item span { font-size:12px }
+  .why-item .chk { font-size:16px }
+
+  .tos-box { padding:20px 16px }
+  .tos-warn { font-size:13px;padding:10px 14px }
+  .tos-list li { font-size:13px }
+
+  .contact-links { flex-direction:column;align-items:stretch;gap:8px;max-width:320px;margin:0 auto }
+  .clink { padding:10px 20px;font-size:13px;justify-content:center }
+
+  .ftr { padding:20px 16px }
+  .ftr p { font-size:12px }
+  .ftr-small { font-size:11px }
 }
 @media(max-width:480px) {
-  .topbar-in { height:48px }
-  .topbar-right a { font-size:12px }
-  .topbar-cta { padding:4px 12px;font-size:11px!important }
-  .lang-btn { padding:3px 8px;font-size:10px }
-  .logo-img { width:26px;height:26px }
-  .logo { font-size:13px;gap:6px }
-  .hero-logo { width:70px;height:70px;border-radius:16px }
-  .hero-title { font-size:clamp(28px,14vw,38px) }
-  .hero-badge { font-size:10px;padding:4px 12px }
-  .btn-primary,.btn-ghost { padding:10px 20px;font-size:13px }
-  .hero-stats { gap:12px;margin-top:28px }
-  .stat-n { font-size:18px }
-  .stat-l { font-size:10px }
-  .clink { padding:8px 16px;font-size:12px }
+  .topbar-in { height:46px }
+  .topbar-right { gap:4px }
+  .topbar-right a { font-size:11px }
+  .topbar-cta { padding:4px 10px;font-size:10px!important }
+  .lang-btn { padding:2px 6px;font-size:9px;border-radius:4px }
+  .logo-img { width:22px;height:22px;border-width:1px }
+  .logo { font-size:12px;gap:5px }
+
+  .hero-sec { padding:60px 12px 30px;min-height:85vh }
+  .hero-logo { width:60px;height:60px;border-radius:14px;margin-bottom:14px }
+  .hero-title { font-size:clamp(24px,12vw,34px);letter-spacing:-1px;margin-bottom:10px }
+  .hero-sub { font-size:13px;margin-bottom:20px }
+  .hero-badge { font-size:9px;padding:3px 10px;margin-bottom:12px }
+  .btn-primary,.btn-ghost { padding:8px 16px;font-size:12px;border-radius:8px }
+  .hero-stats { gap:14px;margin-top:24px }
+  .stat-n { font-size:17px }
+  .stat-l { font-size:9px;letter-spacing:.5px }
+
+  .sec { padding:30px 12px }
+  .sec-head { margin-bottom:20px }
+  .sec-head h2 { font-size:clamp(17px,5vw,20px);letter-spacing:0 }
+  .sec-head p { font-size:13px }
+
+  .feat { padding:12px;border-radius:8px }
+  .feat strong { font-size:12px }
+  .feat span { font-size:11px }
+
+  .client-card { padding:16px;border-radius:10px }
+  .client-stars { font-size:14px;letter-spacing:2px;margin-bottom:8px }
+  .client-text { font-size:12px;margin-bottom:8px }
+
+  .tbl th,.tbl td { padding:8px 10px;font-size:12px }
+  .tbl th { font-size:10px }
+
+  .pcard { padding:18px 16px;border-radius:12px }
+  .pname { font-size:12px;margin-bottom:8px }
+  .pprice { font-size:30px }
+  .dollar { font-size:15px }
+  .pperiod { font-size:11px;margin-bottom:12px;padding-bottom:10px }
+  .pfeats li { padding:7px 0;font-size:12px;gap:6px }
+  .pop-tag { font-size:9px;padding:2px 10px;top:-8px }
+  .btn-sm { padding:8px 16px;font-size:12px }
+
+  .faq-q { padding:12px 14px;font-size:12px }
+  .faq-item.open .faq-a { padding:0 14px 12px }
+
+  .why-item { padding:12px;border-radius:8px }
+  .why-item strong { font-size:12px }
+  .why-item span { font-size:11px }
+  .why-item .chk { font-size:14px }
+
+  .tos-box { padding:16px 12px;border-radius:12px }
+  .tos-warn { font-size:12px;padding:8px 12px }
+  .tos-list li { font-size:12px;gap:8px }
+
+  .clink { padding:8px 16px;font-size:12px;border-radius:8px }
+
+  .ftr { padding:16px 12px }
+  .ftr p { font-size:11px }
 }
 </style>

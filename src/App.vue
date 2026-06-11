@@ -26,8 +26,8 @@ const t = {
   hero_sub: { en: '#1 cambodia based layer 7 stresser. gov & edu targets not allowed. prices start at $5. hit us on telegram to order.', km: 'ស្ត្រេសសឺរលេខ១ នៅកម្ពុជា។ ហាមវាយ .gov និង .edu។ តម្លៃចាប់ផ្ដើមត្រឹមតែ $5។ ទាក់ទងតេឡេក្រាមដើម្បីបញ្ជាទិញ។' },
   btn_plans: { en: 'see plans', km: 'មើលតម្លៃ' },
   btn_methods: { en: 'methods', km: 'វិធីសាស្ត្រ' },
-  why_title: { en: 'why us?', km: 'ហេតុអីយើង?' },
-  why_sub: { en: 'we actually deliver. no bullshit.', km: 'យើងធ្វើការអីពិតៗ មិនកុហកទេ។' },
+  why_title: { en: 'why rikixz', km: 'ហេតុអី rikixz?' },
+  why_sub: { en: 'the only cambodia based layer 7 stresser that actually works.', km: 'ស្ត្រេសសឺរខ្មែរតែមួយគត់ដែលធ្វើការពិតមែន។' },
   feat1_title: { en: 'first in cambodia', km: 'ទីមួយនៅកម្ពុជា' },
   feat1_desc: { en: 'only layer 7 stresser based in cambodia. local infra, global reach.', km: 'ស្ត្រេសសឺរតែមួយគត់ដែលមានមូលដ្ឋាននៅកម្ពុជា។ ហេដ្ឋារចនាសម្ព័ន្ធក្នុងស្រុក ប៉ុន្តែទៅដល់ពិភពលោក។' },
   feat2_title: { en: 'no gov / edu targets', km: 'ហាម .gov និង .edu' },
@@ -184,48 +184,60 @@ const t = {
         <h2>{{ t.why_title[lang] }}</h2>
         <p>{{ t.why_sub[lang] }}</p>
       </div>
-      <div class="feats">
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div class="feats-grid">
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
-          <strong>{{ t.feat1_title[lang] }}</strong>
-          <span>{{ t.feat1_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat1_title[lang] }}</h4>
+            <p>{{ t.feat1_desc[lang] }}</p>
+          </div>
         </div>
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           </div>
-          <strong>{{ t.feat2_title[lang] }}</strong>
-          <span>{{ t.feat2_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat2_title[lang] }}</h4>
+            <p>{{ t.feat2_desc[lang] }}</p>
+          </div>
         </div>
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <strong>{{ t.feat3_title[lang] }}</strong>
-          <span>{{ t.feat3_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat3_title[lang] }}</h4>
+            <p>{{ t.feat3_desc[lang] }}</p>
+          </div>
         </div>
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
-          <strong>{{ t.feat4_title[lang] }}</strong>
-          <span>{{ t.feat4_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat4_title[lang] }}</h4>
+            <p>{{ t.feat4_desc[lang] }}</p>
+          </div>
         </div>
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1010 10 4 4 0 01-5-5 4 4 0 01-5-5A10 10 0 0012 2z"/></svg>
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1010 10 4 4 0 01-5-5 4 4 0 01-5-5A10 10 0 0012 2z"/></svg>
           </div>
-          <strong>{{ t.feat5_title[lang] }}</strong>
-          <span>{{ t.feat5_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat5_title[lang] }}</h4>
+            <p>{{ t.feat5_desc[lang] }}</p>
+          </div>
         </div>
-        <div class="feat">
-          <div class="feat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <div class="feat-card">
+          <div class="feat-card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <strong>{{ t.feat6_title[lang] }}</strong>
-          <span>{{ t.feat6_desc[lang] }}</span>
+          <div>
+            <h4>{{ t.feat6_title[lang] }}</h4>
+            <p>{{ t.feat6_desc[lang] }}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -728,32 +740,37 @@ a { color:inherit; text-decoration:none }
 .sec-head p { color:var(--text2);font-size:15px }
 
 /* features */
-.feats { display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px }
-.feat {
-  padding:26px;background:var(--card);border:1px solid var(--border);border-radius:14px;
-  transition:all .3s ease;animation:fade-up .5s ease-out both;position:relative;
-  box-shadow:0 1px 3px rgba(0,0,0,.03);display:flex;flex-direction:column
+.feats-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px }
+.feat-card {
+  display:flex;align-items:flex-start;gap:18px;padding:22px;
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  transition:all .3s ease;animation:fade-up .5s ease-out both;
+  box-shadow:0 1px 2px rgba(0,0,0,.02)
 }
-.feat-icon {
-  width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;
-  color:var(--accent);background:rgba(255,38,102,.08);margin-bottom:16px;transition:all .3s;
-  flex-shrink:0
+.feat-card:nth-child(1) { animation-delay:0s }
+.feat-card:nth-child(2) { animation-delay:.05s }
+.feat-card:nth-child(3) { animation-delay:.1s }
+.feat-card:nth-child(4) { animation-delay:.15s }
+.feat-card:nth-child(5) { animation-delay:.2s }
+.feat-card:nth-child(6) { animation-delay:.25s }
+.feat-card:hover { border-color:var(--accent);transform:translateX(6px);box-shadow:0 4px 20px rgba(255,38,102,.08) }
+.feat-card-icon {
+  width:52px;height:52px;min-width:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  color:var(--accent);background:rgba(255,38,102,.08);transition:all .3s
 }
-.feat:nth-child(2) .feat-icon { color:#8833ff;background:rgba(136,51,255,.08) }
-.feat:nth-child(3) .feat-icon { color:var(--green);background:rgba(0,187,102,.08) }
-.feat:nth-child(4) .feat-icon { color:#ff8800;background:rgba(255,136,0,.08) }
-.feat:nth-child(5) .feat-icon { color:#00bbff;background:rgba(0,187,255,.08) }
-.feat:nth-child(6) .feat-icon { color:#ff44aa;background:rgba(255,68,170,.08) }
-.feat:nth-child(1) { animation-delay:0s }
-.feat:nth-child(2) { animation-delay:.06s }
-.feat:nth-child(3) { animation-delay:.12s }
-.feat:nth-child(4) { animation-delay:.18s }
-.feat:nth-child(5) { animation-delay:.24s }
-.feat:nth-child(6) { animation-delay:.3s }
-.feat:hover { border-color:var(--accent);transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,38,102,.12) }
-.feat:hover .feat-icon { transform:scale(1.1);background:var(--accent);color:#fff }
-.feat strong { display:block;font-size:15px;font-weight:700;color:var(--head);margin-bottom:6px }
-.feat span { font-size:13px;color:var(--text2);line-height:1.6;display:block }
+.feat-card:hover .feat-card-icon { background:var(--accent);color:#fff;transform:scale(1.05) }
+.feat-card:nth-child(2) .feat-card-icon { color:#8833ff;background:rgba(136,51,255,.08) }
+.feat-card:nth-child(2):hover .feat-card-icon { background:#8833ff;color:#fff }
+.feat-card:nth-child(3) .feat-card-icon { color:var(--green);background:rgba(0,187,102,.08) }
+.feat-card:nth-child(3):hover .feat-card-icon { background:var(--green);color:#fff }
+.feat-card:nth-child(4) .feat-card-icon { color:#ff8800;background:rgba(255,136,0,.08) }
+.feat-card:nth-child(4):hover .feat-card-icon { background:#ff8800;color:#fff }
+.feat-card:nth-child(5) .feat-card-icon { color:#00bbff;background:rgba(0,187,255,.08) }
+.feat-card:nth-child(5):hover .feat-card-icon { background:#00bbff;color:#fff }
+.feat-card:nth-child(6) .feat-card-icon { color:#ff44aa;background:rgba(255,68,170,.08) }
+.feat-card:nth-child(6):hover .feat-card-icon { background:#ff44aa;color:#fff }
+.feat-card h4 { font-size:15px;font-weight:700;color:var(--head);margin-bottom:4px }
+.feat-card p { font-size:13px;color:var(--text2);line-height:1.5;margin:0 }
 
 /* clients */
 .clients-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:620px;margin:0 auto }

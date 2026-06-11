@@ -512,10 +512,10 @@ a { color:inherit; text-decoration:none }
 .topbar:hover { box-shadow:0 2px 24px rgba(0,0,0,.04) }
 .topbar-in {
   max-width:1200px;margin:0 auto;display:flex;
-  align-items:center;justify-content:space-between;height:64px
+  align-items:center;justify-content:space-between;height:72px
 }
-.logo { display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px;color:var(--accent);letter-spacing:-.5px }
-.logo-img { width:36px;height:36px;border-radius:10px;object-fit:cover;flex-shrink:0;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 rgba(255,38,102,.2) }
+.logo { display:flex;align-items:center;gap:14px;font-weight:800;font-size:28px;color:var(--accent);letter-spacing:-.5px }
+.logo-img { width:50px;height:50px;border-radius:12px;object-fit:cover;flex-shrink:0;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 rgba(255,38,102,.2) }
 .logo:hover .logo-img { transform:scale(1.05);box-shadow:0 0 0 3px rgba(255,38,102,.2) }
 .topbar-right { display:flex;align-items:center;gap:24px }
 .topbar-right a { font-size:13px;font-weight:500;color:var(--text2);transition:color .2s;white-space:nowrap;position:relative;padding:4px 0 }
@@ -792,13 +792,13 @@ a { color:inherit; text-decoration:none }
 }
 @media(max-width:768px) {
   .topbar { padding:0 12px }
-  .topbar-in { height:52px }
-  .topbar-right { gap:6px }
+  .topbar-in { height:60px }
+  .topbar-right { gap:8px }
   .topbar-right a:not(.topbar-cta):not(.lang-btn) { display:none }
-  .topbar-cta { padding:5px 12px;font-size:11px!important }
-  .lang-btn { padding:3px 8px;font-size:10px }
-  .logo { font-size:14px;gap:6px }
-  .logo-img { width:26px;height:26px }
+  .topbar-cta { padding:6px 14px;font-size:12px!important }
+  .lang-btn { padding:4px 10px;font-size:11px }
+  .logo { font-size:20px;gap:10px }
+  .logo-img { width:36px;height:36px }
 
   .hero-sec { padding:80px 16px 40px;min-height:90vh }
   .hero-logo { width:72px;height:72px;border-radius:16px }
@@ -863,13 +863,13 @@ a { color:inherit; text-decoration:none }
   .ftr-small { font-size:11px }
 }
 @media(max-width:480px) {
-  .topbar-in { height:48px }
+  .topbar-in { height:54px }
   .topbar-right { gap:6px }
   .topbar-right a { font-size:11px;font-weight:600 }
   .topbar-cta { padding:5px 12px;font-size:11px!important;border-radius:6px }
   .lang-btn { padding:3px 8px;font-size:10px;border-radius:5px }
-  .logo-img { width:26px;height:26px }
-  .logo { font-size:14px;gap:6px }
+  .logo-img { width:30px;height:30px }
+  .logo { font-size:16px;gap:8px }
 
   .hero-sec { padding:72px 16px 40px;min-height:90vh }
   .hero-logo { width:80px;height:80px;border-radius:20px;margin-bottom:18px }

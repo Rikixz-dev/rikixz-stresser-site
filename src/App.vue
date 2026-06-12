@@ -186,48 +186,60 @@ const t = {
         <h2>{{ t.why_title[lang] }}</h2>
         <p>{{ t.why_sub[lang] }}</p>
       </div>
-      <div class="feat-grid">
-        <div class="feat-card2">
-          <div class="feat-icon2">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
-          <h4>{{ t.feat1_title[lang] }}</h4>
-          <p>{{ t.feat1_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat1_title[lang] }}</strong>
+            <span>{{ t.feat1_desc[lang] }}</span>
+          </div>
         </div>
-        <div class="feat-card2">
-          <div class="feat-icon2 i2">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        <div class="feat-item">
+          <div class="feat-dot d2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
           </div>
-          <h4>{{ t.feat2_title[lang] }}</h4>
-          <p>{{ t.feat2_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat2_title[lang] }}</strong>
+            <span>{{ t.feat2_desc[lang] }}</span>
+          </div>
         </div>
-        <div class="feat-card2">
-          <div class="feat-icon2 i3">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div class="feat-item">
+          <div class="feat-dot d3">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h4>{{ t.feat3_title[lang] }}</h4>
-          <p>{{ t.feat3_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat3_title[lang] }}</strong>
+            <span>{{ t.feat3_desc[lang] }}</span>
+          </div>
         </div>
-        <div class="feat-card2">
-          <div class="feat-icon2 i4">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <div class="feat-item">
+          <div class="feat-dot d4">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
-          <h4>{{ t.feat4_title[lang] }}</h4>
-          <p>{{ t.feat4_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat4_title[lang] }}</strong>
+            <span>{{ t.feat4_desc[lang] }}</span>
+          </div>
         </div>
-        <div class="feat-card2">
-          <div class="feat-icon2 i5">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1010 10 4 4 0 01-5-5 4 4 0 01-5-5A10 10 0 0012 2z"/></svg>
+        <div class="feat-item">
+          <div class="feat-dot d5">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1010 10 4 4 0 01-5-5 4 4 0 01-5-5A10 10 0 0012 2z"/></svg>
           </div>
-          <h4>{{ t.feat5_title[lang] }}</h4>
-          <p>{{ t.feat5_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat5_title[lang] }}</strong>
+            <span>{{ t.feat5_desc[lang] }}</span>
+          </div>
         </div>
-        <div class="feat-card2">
-          <div class="feat-icon2 i6">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <div class="feat-item">
+          <div class="feat-dot d6">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
           </div>
-          <h4>{{ t.feat6_title[lang] }}</h4>
-          <p>{{ t.feat6_desc[lang] }}</p>
+          <div>
+            <strong>{{ t.feat6_title[lang] }}</strong>
+            <span>{{ t.feat6_desc[lang] }}</span>
+          </div>
         </div>
       </div>
     </section>
@@ -732,36 +744,36 @@ a { color:inherit; text-decoration:none }
 .sec-head p { color:var(--text2);font-size:15px }
 
 /* features */
-.feat-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:20px }
-.feat-card2 {
-  background:var(--card);border:1px solid var(--border);border-radius:16px;
-  padding:32px 24px 28px;text-align:center;transition:all .3s ease;
-  animation:fade-up .5s ease-out both;box-shadow:0 1px 3px rgba(0,0,0,.03)
+.feat-list { display:flex;flex-direction:column;gap:10px;max-width:680px;margin:0 auto }
+.feat-item {
+  display:flex;align-items:flex-start;gap:16px;padding:18px 20px;
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  transition:all .25s ease;animation:fade-up .5s ease-out both
 }
-.feat-card2:nth-child(1) { animation-delay:0s }
-.feat-card2:nth-child(2) { animation-delay:.06s }
-.feat-card2:nth-child(3) { animation-delay:.12s }
-.feat-card2:nth-child(4) { animation-delay:.18s }
-.feat-card2:nth-child(5) { animation-delay:.24s }
-.feat-card2:nth-child(6) { animation-delay:.3s }
-.feat-card2:hover { border-color:var(--accent);transform:translateY(-6px);box-shadow:0 16px 48px rgba(255,38,102,.12) }
-.feat-icon2 {
-  width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;
-  color:var(--accent);background:rgba(255,38,102,.08);margin:0 auto 18px;transition:all .3s
+.feat-item:nth-child(1) { animation-delay:0s }
+.feat-item:nth-child(2) { animation-delay:.04s }
+.feat-item:nth-child(3) { animation-delay:.08s }
+.feat-item:nth-child(4) { animation-delay:.12s }
+.feat-item:nth-child(5) { animation-delay:.16s }
+.feat-item:nth-child(6) { animation-delay:.2s }
+.feat-item:hover { border-color:var(--accent);transform:translateX(4px);box-shadow:0 2px 12px rgba(255,38,102,.06) }
+.feat-dot {
+  width:36px;height:36px;min-width:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  color:var(--accent);background:rgba(255,38,102,.08);margin-top:1px
 }
-.feat-card2:hover .feat-icon2 { background:var(--accent);color:#fff;transform:scale(1.08) }
-.feat-icon2.i2 { color:#8833ff;background:rgba(136,51,255,.08) }
-.feat-card2:nth-child(2):hover .feat-icon2 { background:#8833ff;color:#fff }
-.feat-icon2.i3 { color:var(--green);background:rgba(0,187,102,.08) }
-.feat-card2:nth-child(3):hover .feat-icon2 { background:var(--green);color:#fff }
-.feat-icon2.i4 { color:#ff8800;background:rgba(255,136,0,.08) }
-.feat-card2:nth-child(4):hover .feat-icon2 { background:#ff8800;color:#fff }
-.feat-icon2.i5 { color:#00bbff;background:rgba(0,187,255,.08) }
-.feat-card2:nth-child(5):hover .feat-icon2 { background:#00bbff;color:#fff }
-.feat-icon2.i6 { color:#ff44aa;background:rgba(255,68,170,.08) }
-.feat-card2:nth-child(6):hover .feat-icon2 { background:#ff44aa;color:#fff }
-.feat-card2 h4 { font-size:16px;font-weight:700;color:var(--head);margin-bottom:8px }
-.feat-card2 p { font-size:13px;color:var(--text2);line-height:1.5;margin:0 }
+.feat-item:hover .feat-dot { background:var(--accent);color:#fff }
+.feat-dot.d2 { color:#8833ff;background:rgba(136,51,255,.08) }
+.feat-item:nth-child(2):hover .feat-dot { background:#8833ff;color:#fff }
+.feat-dot.d3 { color:var(--green);background:rgba(0,187,102,.08) }
+.feat-item:nth-child(3):hover .feat-dot { background:var(--green);color:#fff }
+.feat-dot.d4 { color:#ff8800;background:rgba(255,136,0,.08) }
+.feat-item:nth-child(4):hover .feat-dot { background:#ff8800;color:#fff }
+.feat-dot.d5 { color:#00bbff;background:rgba(0,187,255,.08) }
+.feat-item:nth-child(5):hover .feat-dot { background:#00bbff;color:#fff }
+.feat-dot.d6 { color:#ff44aa;background:rgba(255,68,170,.08) }
+.feat-item:nth-child(6):hover .feat-dot { background:#ff44aa;color:#fff }
+.feat-item strong { display:block;font-size:15px;font-weight:700;color:var(--head);margin-bottom:2px }
+.feat-item span { font-size:13px;color:var(--text2);line-height:1.5;display:block }
 
 /* clients */
 .clients-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;max-width:620px;margin:0 auto }
@@ -941,7 +953,7 @@ a { color:inherit; text-decoration:none }
 .ftr a { color:var(--accent) }
 
 @media(max-width:900px) {
-  .feat-grid { grid-template-columns:repeat(2,1fr);gap:14px }
+  .feat-list { max-width:100% }
   .prices { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)) }
 }
 @media(max-width:768px) {
@@ -970,12 +982,12 @@ a { color:inherit; text-decoration:none }
   .sec-head h2 { font-size:clamp(20px,5vw,24px) }
   .sec-head p { font-size:14px }
 
-  .feat-grid { grid-template-columns:1fr;gap:12px }
-  .feat-card2 { padding:22px 18px 20px }
-  .feat-icon2 { width:52px;height:52px;margin-bottom:14px }
-  .feat-icon2 svg { width:28px;height:28px }
-  .feat-card2 h4 { font-size:15px }
-  .feat-card2 p { font-size:12px }
+  .feat-list { gap:8px }
+  .feat-item { padding:14px 16px;gap:12px }
+  .feat-dot { width:30px;height:30px;min-width:30px }
+  .feat-dot svg { width:14px;height:14px }
+  .feat-item strong { font-size:14px }
+  .feat-item span { font-size:12px }
 
   .clients-grid { grid-template-columns:1fr;gap:10px;max-width:100% }
   .client-card { padding:20px }
@@ -1050,11 +1062,11 @@ a { color:inherit; text-decoration:none }
   .sec-head h2 { font-size:clamp(20px,6vw,24px);letter-spacing:-.5px }
   .sec-head p { font-size:14px }
 
-  .feat-card2 { padding:18px 14px 16px;border-radius:12px }
-  .feat-icon2 { width:44px;height:44px;border-radius:12px;margin-bottom:10px }
-  .feat-icon2 svg { width:24px;height:24px }
-  .feat-card2 h4 { font-size:14px }
-  .feat-card2 p { font-size:12px }
+  .feat-item { padding:12px 14px;gap:10px;border-radius:10px }
+  .feat-dot { width:26px;height:26px;min-width:26px;border-radius:8px }
+  .feat-dot svg { width:12px;height:12px }
+  .feat-item strong { font-size:13px }
+  .feat-item span { font-size:11px }
 
   .clients-grid { gap:10px }
   .client-card { padding:18px;border-radius:12px }

@@ -138,11 +138,13 @@ const t = {
     <div class="topbar">
       <div class="topbar-in">
         <span class="logo"><img src="https://i.postimg.cc/FzYQ42Zv/%F0%90%94%8C-anime-icon.jpg" alt="" class="logo-img"> rikixz stresser</span>
-        <div class="topbar-right">
+        <div class="topbar-nav">
           <a href="#prices">{{ t.nav_price[lang] }}</a>
           <a href="#methods">{{ t.nav_methods[lang] }}</a>
           <a href="#faq">{{ t.nav_faq[lang] }}</a>
           <a href="#tos">{{ t.nav_tos[lang] }}</a>
+        </div>
+        <div class="topbar-right">
           <button class="lang-btn" @click="toggleLang">{{ lang === 'en' ? 'KH' : 'EN' }}</button>
           <a href="#contact" class="topbar-cta">{{ t.nav_order[lang] }}</a>
         </div>
@@ -604,36 +606,38 @@ a { color:inherit; text-decoration:none }
 /* topbar */
 .topbar {
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(255,255,255,.95);backdrop-filter:blur(20px);
+  background:rgba(255,255,255,.97);backdrop-filter:blur(24px);
   border-bottom:1px solid var(--border);padding:0 24px;
-  transition:box-shadow .3s
+  transition:box-shadow .3s,background .3s
 }
-.topbar:hover { box-shadow:0 2px 24px rgba(0,0,0,.04) }
+.topbar:hover { box-shadow:0 4px 32px rgba(0,0,0,.06) }
 .topbar-in {
   max-width:1200px;margin:0 auto;display:flex;
   align-items:center;justify-content:space-between;height:72px
 }
-.logo { display:flex;align-items:center;gap:14px;font-weight:800;font-size:28px;color:var(--accent);letter-spacing:-.5px }
-.logo-img { width:50px;height:50px;border-radius:12px;object-fit:cover;flex-shrink:0;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 rgba(255,38,102,.2) }
+.logo { display:flex;align-items:center;gap:12px;font-weight:800;font-size:24px;color:var(--accent);letter-spacing:-.5px }
+.logo-img { width:44px;height:44px;border-radius:12px;object-fit:cover;flex-shrink:0;transition:transform .3s,box-shadow .3s;box-shadow:0 0 0 0 rgba(255,38,102,.2) }
 .logo:hover .logo-img { transform:scale(1.05);box-shadow:0 0 0 3px rgba(255,38,102,.2) }
-.topbar-right { display:flex;align-items:center;gap:24px }
-.topbar-right a { font-size:13px;font-weight:500;color:var(--text2);transition:color .2s;white-space:nowrap;position:relative;padding:4px 0 }
-.topbar-right a::after { content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--accent);transition:width .25s;border-radius:2px }
-.topbar-right a:hover { color:var(--accent) }
-.topbar-right a:hover::after { width:100% }
+.topbar-nav { display:flex;align-items:center;gap:4px }
+.topbar-nav a {
+  font-size:13px;font-weight:600;color:var(--text2);transition:all .25s;
+  white-space:nowrap;padding:8px 16px;border-radius:8px;text-decoration:none;
+  background:transparent
+}
+.topbar-nav a:hover { color:var(--accent);background:rgba(255,38,102,.06) }
+.topbar-right { display:flex;align-items:center;gap:10px }
 .lang-btn {
-  background:var(--card);border:1px solid var(--border);color:var(--text);padding:5px 14px;
-  border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .2s;
-  font-family:var(--font);letter-spacing:.5px;text-transform:uppercase
+  background:var(--bg);border:1px solid var(--border);color:var(--text);padding:6px 14px;
+  border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;transition:all .25s;
+  font-family:var(--font);letter-spacing:.5px;text-transform:uppercase;min-width:44px;text-align:center
 }
-.lang-btn:hover { border-color:var(--accent);color:var(--accent);background:var(--card-h);box-shadow:0 0 12px rgba(255,38,102,.08) }
+.lang-btn:hover { border-color:var(--accent);color:var(--accent);background:rgba(255,38,102,.06) }
 .topbar-cta {
-  background:var(--accent);color:#fff!important;padding:8px 20px;
-  border-radius:8px;font-weight:600!important;font-size:13px!important;
-  transition:all .25s!important
+  background:var(--accent);color:#fff;padding:8px 22px;
+  border-radius:8px;font-weight:700;font-size:13px;text-decoration:none;
+  transition:all .25s;letter-spacing:.3px
 }
-.topbar-cta::after { display:none!important }
-.topbar-cta:hover { background:var(--accent2)!important;transform:translateY(-1px);box-shadow:0 4px 16px rgba(255,38,102,.3)!important }
+.topbar-cta:hover { background:var(--accent2);transform:translateY(-1px);box-shadow:0 4px 20px rgba(255,38,102,.35) }
 
 /* hero */
 .hero-sec {
@@ -943,12 +947,12 @@ a { color:inherit; text-decoration:none }
 @media(max-width:768px) {
   .topbar { padding:0 12px }
   .topbar-in { height:60px }
-  .topbar-right { gap:8px }
-  .topbar-right a:not(.topbar-cta):not(.lang-btn) { display:none }
-  .topbar-cta { padding:6px 14px;font-size:12px!important }
-  .lang-btn { padding:4px 10px;font-size:11px }
-  .logo { font-size:20px;gap:10px }
-  .logo-img { width:36px;height:36px }
+  .topbar-nav a:not(.topbar-cta):not(.lang-btn) { display:none }
+  .topbar-right { gap:6px }
+  .topbar-cta { padding:6px 16px;font-size:12px }
+  .lang-btn { padding:4px 10px;font-size:11px;min-width:38px }
+  .logo { font-size:18px;gap:8px }
+  .logo-img { width:34px;height:34px }
 
   .hero-sec { padding:80px 16px 40px;min-height:90vh }
   .hero-logo { width:72px;height:72px;border-radius:16px }
@@ -1024,12 +1028,11 @@ a { color:inherit; text-decoration:none }
 }
 @media(max-width:480px) {
   .topbar-in { height:54px }
-  .topbar-right { gap:6px }
-  .topbar-right a { font-size:11px;font-weight:600 }
-  .topbar-cta { padding:5px 12px;font-size:11px!important;border-radius:6px }
-  .lang-btn { padding:3px 8px;font-size:10px;border-radius:5px }
-  .logo-img { width:30px;height:30px }
-  .logo { font-size:16px;gap:8px }
+  .topbar-right { gap:4px }
+  .topbar-cta { padding:5px 12px;font-size:11px;border-radius:6px }
+  .lang-btn { padding:3px 8px;font-size:10px;border-radius:5px;min-width:32px }
+  .logo-img { width:28px;height:28px }
+  .logo { font-size:15px;gap:6px }
 
   .hero-sec { padding:72px 16px 40px;min-height:90vh }
   .hero-logo { width:80px;height:80px;border-radius:20px;margin-bottom:18px }

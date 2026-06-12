@@ -1,4 +1,4 @@
-name = "rikixz-stresser"
+name = "rikixz-stresser-site"
 main = "src/worker.js"
 compatibility_date = "2026-06-01"
 
